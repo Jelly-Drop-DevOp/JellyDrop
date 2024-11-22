@@ -1,0 +1,31 @@
+[gd_scene load_steps=2 format=3 uid="uid://cuj06sanmhu01"]
+
+[ext_resource type="Script" path="res://scene_controller.gd" id="1_7rq1o"]
+
+[node name="SceneController" type="Node2D"]
+script = ExtResource("1_7rq1o")
+
+[node name="ShopTransferButton" type="Button" parent="."]
+offset_left = 25.0
+offset_top = 580.0
+offset_right = 118.0
+offset_bottom = 627.0
+text = "shop"
+
+[node name="FarmTransferButton" type="Button" parent="."]
+offset_left = 509.0
+offset_top = 568.0
+offset_right = 608.0
+offset_bottom = 629.0
+text = "farm"
+
+[node name="MixerTransferButton" type="Button" parent="."]
+offset_left = 1034.0
+offset_top = 572.0
+offset_right = 1114.0
+offset_bottom = 629.0
+text = "mixer"
+
+[connection signal="pressed" from="ShopTransferButton" to="." method="_on_shop_transfer_button_pressed"]
+[connection signal="pressed" from="FarmTransferButton" to="." method="_on_farm_transfer_button_pressed"]
+[connection signal="pressed" from="MixerTransferButton" to="." method="_on_mixer_transfer_button_pressed"]

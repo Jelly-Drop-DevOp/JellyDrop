@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://lv86cco5bay3"]
+
+[ext_resource type="Texture2D" uid="uid://bybp6mwrpfjey" path="res://shop.jpg" id="1_b5mhg"]
+[ext_resource type="PackedScene" uid="uid://cuj06sanmhu01" path="res://scene_controller.tscn" id="2_gkq2x"]
+
+[node name="Shop" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(577.25, 323.5)
+scale = Vector2(0.746274, 0.747696)
+texture = ExtResource("1_b5mhg")
+
+[node name="SceneController" parent="." instance=ExtResource("2_gkq2x")]
