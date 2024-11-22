@@ -1,7 +1,127 @@
-[gd_scene load_steps=3 format=3 uid="uid://b57agm7a18cmu"]
+[gd_scene load_steps=32 format=3 uid="uid://b57agm7a18cmu"]
 
 [ext_resource type="Texture2D" uid="uid://dnfsb0bpc4as6" path="res://habitat.jpg" id="1_2tpd6"]
 [ext_resource type="PackedScene" uid="uid://cuj06sanmhu01" path="res://scene_controller.tscn" id="2_1vn11"]
+[ext_resource type="Texture2D" uid="uid://cyiwoe6357ryn" path="res://assets/Water Drop Animation V1/water-drop-f1.PNG" id="3_crnpr"]
+[ext_resource type="Texture2D" uid="uid://bu4f2blbwit81" path="res://assets/Water Drop Animation V1/water-drop-f2.PNG" id="4_1dqwl"]
+[ext_resource type="Texture2D" uid="uid://b44umq6ily7b6" path="res://assets/Water Drop Animation V1/water-drop-f3.PNG" id="5_ygho7"]
+[ext_resource type="Texture2D" uid="uid://7w52kjtadire" path="res://assets/Water Drop Animation V1/water-drop-f4.PNG" id="6_nfy8y"]
+[ext_resource type="Texture2D" uid="uid://b8wxewlvu0r2a" path="res://assets/Water Drop Animation V1/water-drop-f5.PNG" id="7_0vji6"]
+[ext_resource type="Texture2D" uid="uid://bb8q816q1tut" path="res://assets/Water Drop Animation V1/water-drop-f6.PNG" id="8_b4afq"]
+[ext_resource type="Texture2D" uid="uid://b4ie7f5o0jqa8" path="res://assets/Water Drop Animation V1/water-drop-f7.PNG" id="9_7kisw"]
+[ext_resource type="Texture2D" uid="uid://dwly6mdlk76ys" path="res://assets/Water Drop Animation V1/water-drop-f8.PNG" id="10_wqc0b"]
+[ext_resource type="Texture2D" uid="uid://bxfsoqp5p4utf" path="res://assets/Water Drop Animation V1/water-drop-f9.PNG" id="11_rufnp"]
+[ext_resource type="Texture2D" uid="uid://3iaxpgsx10xd" path="res://assets/Water Drop Animation V1/water-drop-f10.PNG" id="12_7jb6r"]
+[ext_resource type="Texture2D" uid="uid://b30fbhpomtmrd" path="res://assets/Water Drop Animation V1/water-drop-f11.PNG" id="13_4x20n"]
+[ext_resource type="Texture2D" uid="uid://ddmqamt2c1c6p" path="res://assets/Water Drop Animation V1/water-drop-f12.PNG" id="14_c4yqf"]
+[ext_resource type="Texture2D" uid="uid://kd1knfeoi0wt" path="res://assets/Water Drop Animation V1/water-drop-f13.PNG" id="15_4m40g"]
+[ext_resource type="Texture2D" uid="uid://c0oiii471y8r8" path="res://assets/Water Drop Animation V1/water-drop-f14.PNG" id="16_5laoe"]
+[ext_resource type="Texture2D" uid="uid://jvb7f0moqvqw" path="res://assets/Water Drop Animation V1/water-drop-f15.PNG" id="17_c5rny"]
+[ext_resource type="Texture2D" uid="uid://bb0kk4t30mjkq" path="res://assets/Water Drop Animation V1/water-drop-f16.PNG" id="18_tiwui"]
+[ext_resource type="Texture2D" uid="uid://8cpnfarcjlxu" path="res://assets/Water Drop Animation V1/water-drop-f17.PNG" id="19_dn3e8"]
+[ext_resource type="Texture2D" uid="uid://2lmrvlhbtdeb" path="res://assets/Water Drop Animation V1/water-drop-f18.PNG" id="20_jy5f5"]
+[ext_resource type="Texture2D" uid="uid://841s3fgonsos" path="res://assets/Water Drop Animation V1/water-drop-f19.PNG" id="21_gufdx"]
+[ext_resource type="Texture2D" uid="uid://14tt017ou8bc" path="res://assets/Water Drop Animation V1/water-drop-f20.PNG" id="22_d7ybn"]
+[ext_resource type="Texture2D" uid="uid://cyxjn4ofqag5b" path="res://assets/Water Drop Animation V1/water-drop-f21.PNG" id="23_0bsep"]
+[ext_resource type="Texture2D" uid="uid://catcb8k2t7awg" path="res://assets/Water Drop Animation V1/water-drop-f22.PNG" id="24_1gfoa"]
+[ext_resource type="Texture2D" uid="uid://cl6x1nnlqmfww" path="res://assets/Water Drop Animation V1/water-drop-f23.PNG" id="25_vwcpl"]
+[ext_resource type="Texture2D" uid="uid://i0fiqi2lg5c" path="res://assets/Water Drop Animation V1/water-drop-f24.PNG" id="26_1k0wm"]
+[ext_resource type="Texture2D" uid="uid://bax8r1pyxm28c" path="res://assets/Water Drop Animation V1/water-drop-f25.PNG" id="27_q82hy"]
+[ext_resource type="Texture2D" uid="uid://didmkctf1spv2" path="res://assets/Water Drop Animation V1/water-drop-f26.PNG" id="28_sl871"]
+[ext_resource type="Texture2D" uid="uid://b4nj2lx1serlh" path="res://assets/Water Drop Animation V1/water-drop-f27.PNG" id="29_ntjqw"]
+[ext_resource type="Texture2D" uid="uid://0btl7phivsws" path="res://assets/Water Drop Animation V1/water-drop-f28.PNG" id="30_3moon"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_apuk7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_crnpr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_1dqwl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_ygho7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_nfy8y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_0vji6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_b4afq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_7kisw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_wqc0b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_rufnp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_7jb6r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_4x20n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_c4yqf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_4m40g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_5laoe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_c5rny")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_tiwui")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_dn3e8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_jy5f5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_gufdx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_d7ybn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_0bsep")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_1gfoa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_vwcpl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_1k0wm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_q82hy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_sl871")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_ntjqw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_3moon")
+}],
+"loop": true,
+"name": &"default",
+"speed": 16.0
+}]
 
 [node name="Farm" type="Node2D"]
 
@@ -11,9 +131,15 @@ offset_bottom = 648.0
 color = Color(0.458824, 1, 1, 1)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(576, 324.5)
+position = Vector2(574, 324)
 scale = Vector2(0.7175, 0.721111)
 texture = ExtResource("1_2tpd6")
 
 [node name="SceneController" parent="." instance=ExtResource("2_1vn11")]
 position = Vector2(6.10352e-05, 3.05176e-05)
+
+[node name="jelly-template" type="AnimatedSprite2D" parent="."]
+position = Vector2(695, 458)
+scale = Vector2(0.0813357, 0.0813357)
+sprite_frames = SubResource("SpriteFrames_apuk7")
+frame_progress = 0.406363
