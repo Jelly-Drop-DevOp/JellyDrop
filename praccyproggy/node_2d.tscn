@@ -1,0 +1,209 @@
+[gd_scene load_steps=44 format=3 uid="uid://bnjf8v5xvvo0g"]
+
+[ext_resource type="Script" path="res://jellyai.gd" id="1_8j0bs"]
+[ext_resource type="Texture2D" uid="uid://bk1vqdyqian42" path="res://Water Drop Animation V1-20241129T192132Z-001/Water Drop Animation V1/water-drop-f1.PNG" id="2_tugth"]
+[ext_resource type="Texture2D" uid="uid://bdss5i2rnlqid" path="res://Water Drop Animation V1-20241129T192132Z-001/Water Drop Animation V1/water-drop-f2.PNG" id="3_7kqlc"]
+[ext_resource type="Texture2D" uid="uid://dtay03813iyen" path="res://Water Drop Animation V1-20241129T192132Z-001/Water Drop Animation V1/water-drop-f3.PNG" id="4_ow6sb"]
+[ext_resource type="Texture2D" uid="uid://uwry2dqg3ox6" path="res://Water Drop Animation V1-20241129T192132Z-001/Water Drop Animation V1/water-drop-f4.PNG" id="5_vvoyy"]
+[ext_resource type="Texture2D" uid="uid://yopqhki1mq58" path="res://Water Drop Animation V1-20241129T192132Z-001/Water Drop Animation V1/water-drop-f5.PNG" id="6_qlyh4"]
+[ext_resource type="Texture2D" uid="uid://iw4wo504018" path="res://Water Drop Animation V1-20241129T192132Z-001/Water Drop Animation V1/water-drop-f6.PNG" id="7_brelo"]
+[ext_resource type="Texture2D" uid="uid://8s2xslyvesk4" path="res://Water Drop Animation V1-20241129T192132Z-001/Water Drop Animation V1/water-drop-f7.PNG" id="8_ra80e"]
+[ext_resource type="Texture2D" uid="uid://2vdkwqe8w1m6" path="res://Water Drop Animation V1-20241129T192132Z-001/Water Drop Animation V1/water-drop-f8.PNG" id="9_xkowu"]
+[ext_resource type="Texture2D" uid="uid://b5cdmgrilm5rf" path="res://Water Drop Animation V1-20241129T192132Z-001/Water Drop Animation V1/water-drop-f9.PNG" id="10_h0788"]
+[ext_resource type="Texture2D" uid="uid://d0ti4obw8tcs8" path="res://Water Drop Animation V1-20241129T192132Z-001/Water Drop Animation V1/water-drop-f10.PNG" id="11_cdfml"]
+[ext_resource type="Texture2D" uid="uid://vdyl0gg1h7s8" path="res://Water Drop Animation V1-20241129T192132Z-001/Water Drop Animation V1/water-drop-f11.PNG" id="12_h28rv"]
+[ext_resource type="Texture2D" uid="uid://codv3v42sq4fj" path="res://Water Drop Animation V1-20241129T192132Z-001/Water Drop Animation V1/water-drop-f12.PNG" id="13_f6kkb"]
+[ext_resource type="Texture2D" uid="uid://ch5o71s6qcj0n" path="res://Water Drop Animation V1-20241129T192132Z-001/Water Drop Animation V1/water-drop-f13.PNG" id="14_sm5bi"]
+[ext_resource type="Texture2D" uid="uid://dlew1g7byv4ob" path="res://Water Drop Animation V1-20241129T192132Z-001/Water Drop Animation V1/water-drop-f14.PNG" id="15_0mwgm"]
+[ext_resource type="Texture2D" uid="uid://cg5s2p6bngew1" path="res://Water Drop Animation V1-20241129T192132Z-001/Water Drop Animation V1/water-drop-f15.PNG" id="16_rdijt"]
+[ext_resource type="Texture2D" uid="uid://peqrvdc8ku7y" path="res://Water Drop Animation V1-20241129T192132Z-001/Water Drop Animation V1/water-drop-f16.PNG" id="17_hu0xg"]
+[ext_resource type="Texture2D" uid="uid://bx76hklnqvh0t" path="res://Water Drop Animation V1-20241129T192132Z-001/Water Drop Animation V1/water-drop-f17.PNG" id="18_x064s"]
+[ext_resource type="Texture2D" uid="uid://d2cq3whfa3bcq" path="res://Water Drop Animation V1-20241129T192132Z-001/Water Drop Animation V1/water-drop-f18.PNG" id="19_t0jno"]
+[ext_resource type="Texture2D" uid="uid://ben743oy7l5fs" path="res://Water Drop Animation V1-20241129T192132Z-001/Water Drop Animation V1/water-drop-f19.PNG" id="20_vskw0"]
+[ext_resource type="Texture2D" uid="uid://bmhifdn2h6sa8" path="res://Water Drop Animation V1-20241129T192132Z-001/Water Drop Animation V1/water-drop-f20.PNG" id="21_fib66"]
+[ext_resource type="Texture2D" uid="uid://10q15c61j34l" path="res://Water Drop Animation V1-20241129T192132Z-001/Water Drop Animation V1/water-drop-f21.PNG" id="22_ol3v0"]
+[ext_resource type="Texture2D" uid="uid://i71qmprpaj4m" path="res://Water Drop Animation V1-20241129T192132Z-001/Water Drop Animation V1/water-drop-f22.PNG" id="23_xgnef"]
+[ext_resource type="Texture2D" uid="uid://bbn8xy80x2q5w" path="res://Water Drop Animation V1-20241129T192132Z-001/Water Drop Animation V1/water-drop-f23.PNG" id="24_koxlk"]
+[ext_resource type="Texture2D" uid="uid://g775no1t64ae" path="res://Water Drop Animation V1-20241129T192132Z-001/Water Drop Animation V1/water-drop-f24.PNG" id="25_om5k5"]
+[ext_resource type="Texture2D" uid="uid://cs8pofp3d7xfp" path="res://Water Drop Animation V1-20241129T192132Z-001/Water Drop Animation V1/water-drop-f25.PNG" id="26_xys2l"]
+[ext_resource type="Texture2D" uid="uid://x8tp2s1u3oli" path="res://Water Drop Animation V1-20241129T192132Z-001/Water Drop Animation V1/water-drop-f26.PNG" id="27_acnob"]
+[ext_resource type="Texture2D" uid="uid://b6pkwmddu4v2h" path="res://Water Drop Animation V1-20241129T192132Z-001/Water Drop Animation V1/water-drop-f27.PNG" id="28_xutnu"]
+[ext_resource type="Texture2D" uid="uid://b4b852k1b5myt" path="res://Water Drop Animation V1-20241129T192132Z-001/Water Drop Animation V1/water-drop-f28.PNG" id="29_ot3dx"]
+[ext_resource type="Texture2D" uid="uid://b6bg33i0n0hhx" path="res://Water Drop Anim Move V1/Untitled_Artwork-1.png" id="30_hy61k"]
+[ext_resource type="Texture2D" uid="uid://5vhcc3wbhmqy" path="res://Water Drop Anim Move V1/Untitled_Artwork-2.png" id="31_l5fk3"]
+[ext_resource type="Texture2D" uid="uid://blkymu4chev84" path="res://Water Drop Anim Move V1/Untitled_Artwork-3.png" id="32_bw0a6"]
+[ext_resource type="Texture2D" uid="uid://bygr5u8r1rrux" path="res://Water Drop Anim Move V1/Untitled_Artwork-4.png" id="33_2s3al"]
+[ext_resource type="Texture2D" uid="uid://dhlxusy6iuxk7" path="res://Water Drop Anim Move V1/Untitled_Artwork-5.png" id="34_6mlfq"]
+[ext_resource type="Texture2D" uid="uid://kc0mjhhys33u" path="res://Water Drop Anim Move V1/Untitled_Artwork-6.png" id="35_t6bb2"]
+[ext_resource type="Texture2D" uid="uid://60v8ugbuvd5i" path="res://Water Drop Anim Move V1/Untitled_Artwork-7.png" id="36_85rmx"]
+[ext_resource type="Texture2D" uid="uid://bu0wt62hdgcmt" path="res://Water Drop Anim Move V1/Untitled_Artwork-8.png" id="37_elttw"]
+[ext_resource type="Texture2D" uid="uid://cv2bkovis43gd" path="res://Water Drop Anim Move V1/Untitled_Artwork-9.png" id="38_r3tll"]
+[ext_resource type="Texture2D" uid="uid://bn4a1ewuoan7" path="res://Water Drop Anim Move V1/Untitled_Artwork-10.png" id="39_mjr2w"]
+[ext_resource type="Texture2D" uid="uid://kvrg1vb85g7d" path="res://Water Drop Anim Move V1/Untitled_Artwork-11.png" id="40_au38n"]
+[ext_resource type="Texture2D" uid="uid://dgvaomlj801sn" path="res://Water Drop Anim Move V1/Untitled_Artwork-12.png" id="41_vf2i7"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_43d0g"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_tugth")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_7kqlc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_ow6sb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_vvoyy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_qlyh4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_brelo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_ra80e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_xkowu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_h0788")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_cdfml")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_h28rv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_f6kkb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_sm5bi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_0mwgm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_rdijt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_hu0xg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_x064s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_t0jno")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_vskw0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_fib66")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_ol3v0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_xgnef")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_koxlk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_om5k5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_xys2l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_acnob")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_xutnu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_ot3dx")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 16.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("30_hy61k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_l5fk3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_bw0a6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_2s3al")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_6mlfq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_t6bb2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_85rmx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_85rmx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_85rmx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_85rmx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_85rmx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_elttw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_r3tll")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_mjr2w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_au38n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_vf2i7")
+}],
+"loop": true,
+"name": &"move",
+"speed": 16.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_kp4ho"]
+radius = 306.67
+
+[node name="JellyDrop" type="Node2D"]
+
+[node name="JellAi" type="CharacterBody2D" parent="."]
+script = ExtResource("1_8j0bs")
+
+[node name="JellyAnimations" type="AnimatedSprite2D" parent="JellAi"]
+sprite_frames = SubResource("SpriteFrames_43d0g")
+animation = &"move"
+frame_progress = 0.970737
+
+[node name="JellyCollision" type="CollisionShape2D" parent="JellAi"]
+shape = SubResource("CircleShape2D_kp4ho")
+debug_color = Color(1, 1, 1, 0)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(30, -17)
+zoom = Vector2(0.5, 0.5)
