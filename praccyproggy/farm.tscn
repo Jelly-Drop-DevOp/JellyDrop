@@ -1,9 +1,9 @@
 [gd_scene load_steps=9 format=3 uid="uid://b57agm7a18cmu"]
 
-[ext_resource type="Texture2D" uid="uid://dnfsb0bpc4as6" path="res://habitat.jpg" id="1_2tpd6"]
 [ext_resource type="Script" path="res://farm.gd" id="1_n4t2v"]
 [ext_resource type="PackedScene" uid="uid://cuj06sanmhu01" path="res://scene_controller.tscn" id="2_1vn11"]
 [ext_resource type="PackedScene" uid="uid://cf0p7vco72ic3" path="res://jellydrop.tscn" id="2_eprei"]
+[ext_resource type="Texture2D" uid="uid://ctuhrxrryvcyr" path="res://assets/habitatV2.jpg" id="3_abj5m"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_ujobm"]
 
@@ -29,7 +29,7 @@ color = Color(0.458824, 1, 1, 1)
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(576, 324.5)
 scale = Vector2(0.7175, 0.721111)
-texture = ExtResource("1_2tpd6")
+texture = ExtResource("3_abj5m")
 
 [node name="SceneController" parent="." instance=ExtResource("2_1vn11")]
 position = Vector2(6.10352e-05, 3.05176e-05)
