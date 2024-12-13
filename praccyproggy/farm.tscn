@@ -1,6 +1,6 @@
 [gd_scene load_steps=32 format=3 uid="uid://b57agm7a18cmu"]
 
-[ext_resource type="Texture2D" uid="uid://dnfsb0bpc4as6" path="res://habitat.jpg" id="1_2tpd6"]
+[ext_resource type="Texture2D" uid="uid://6rpdmj5m3u30" path="res://assets/habitatV2.jpg" id="1_lqli6"]
 [ext_resource type="PackedScene" uid="uid://cuj06sanmhu01" path="res://scene_controller.tscn" id="2_1vn11"]
 [ext_resource type="Texture2D" uid="uid://cyiwoe6357ryn" path="res://assets/Water Drop Animation V1/water-drop-f1.PNG" id="3_crnpr"]
 [ext_resource type="Texture2D" uid="uid://bu4f2blbwit81" path="res://assets/Water Drop Animation V1/water-drop-f2.PNG" id="4_1dqwl"]
@@ -133,7 +133,7 @@ color = Color(0.458824, 1, 1, 1)
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(574, 324)
 scale = Vector2(0.7175, 0.721111)
-texture = ExtResource("1_2tpd6")
+texture = ExtResource("1_lqli6")
 
 [node name="SceneController" parent="." instance=ExtResource("2_1vn11")]
 position = Vector2(6.10352e-05, 3.05176e-05)
@@ -142,4 +142,4 @@ position = Vector2(6.10352e-05, 3.05176e-05)
 position = Vector2(695, 458)
 scale = Vector2(0.0813357, 0.0813357)
 sprite_frames = SubResource("SpriteFrames_apuk7")
-frame_progress = 0.406363
+frame_progress = 0.939107
