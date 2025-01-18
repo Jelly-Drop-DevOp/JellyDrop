@@ -15,7 +15,7 @@ func _process(delta: float) -> void:
 
 func _on_add_jelly_button_pressed() -> void:
 	var jelly = jellyTemplate.instantiate()
-	jelly.position = $jellySpawn.position
+	jelly.position = $JellySpawner.position
 	add_child(jelly)
 	##jelly.global_position = $jellySpawn
 	print("buttonpressed")
