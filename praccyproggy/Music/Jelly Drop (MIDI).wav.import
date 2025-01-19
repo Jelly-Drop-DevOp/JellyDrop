@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://c7ojjvr2r3geq"
+path="res://.godot/imported/Jelly Drop (MIDI).wav-0ed7f551af89bdea66ec161466ea7f83.sample"
+
+[deps]
+
+source_file="res://Music/Jelly Drop (MIDI).wav"
+dest_files=["res://.godot/imported/Jelly Drop (MIDI).wav-0ed7f551af89bdea66ec161466ea7f83.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=false
+edit/loop_mode=2
+edit/loop_begin=0
+edit/loop_end=705000
+compress/mode=0

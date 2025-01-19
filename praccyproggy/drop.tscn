@@ -1,0 +1,46 @@
+[gd_scene load_steps=6 format=3 uid="uid://dnb7bahxu1tl1"]
+
+[ext_resource type="Script" path="res://clickdrag.gd" id="1_n1m56"]
+[ext_resource type="Script" path="res://drop.gd" id="1_nijve"]
+[ext_resource type="Texture2D" uid="uid://bjop1hng1q1l1" path="res://assets/dirnkablewindows.png" id="1_pgk71"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_fiecb"]
+radius = 52.7515
+height = 221.597
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_antl6"]
+radius = 50.9806
+height = 223.606
+
+[node name="Drop" type="Node2D"]
+
+[node name="drop" type="CharacterBody2D" parent="."]
+script = ExtResource("1_nijve")
+
+[node name="clickdrag" type="Node2D" parent="drop"]
+script = ExtResource("1_n1m56")
+
+[node name="Dirnkablewindows" type="Sprite2D" parent="drop"]
+position = Vector2(0, 4.54747e-13)
+scale = Vector2(0.200398, 0.214235)
+texture = ExtResource("1_pgk71")
+
+[node name="dropclickarea" type="Area2D" parent="drop"]
+
+[node name="dropclickbox" type="CollisionShape2D" parent="drop/dropclickarea"]
+position = Vector2(-3, 0)
+rotation = -0.178024
+shape = SubResource("CapsuleShape2D_fiecb")
+
+[node name="droppolygon" type="CollisionPolygon2D" parent="drop/dropclickarea"]
+texture_filter = 2
+polygon = PackedVector2Array(-63, -91, -49, -100, -28, -107, -9, -111, 12, -111, 21, -109, 25, -103, 24, -99, 35, -76, 66, 79, 58, 90, 56, 95, 46, 99, 29, 104, 4, 110, -21, 112, -26, 108, -35, 104, -65, -58)
+
+[node name="dropshape" type="CollisionShape2D" parent="drop"]
+visible = false
+position = Vector2(-4, 0)
+rotation = -0.178024
+shape = SubResource("CapsuleShape2D_antl6")
+
+[connection signal="mouse_entered" from="drop/dropclickarea" to="drop" method="_on_dropclickarea_mouse_entered"]
+[connection signal="mouse_exited" from="drop/dropclickarea" to="drop" method="_on_dropclickarea_mouse_exited"]

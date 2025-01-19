@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dc2bxkmnpw1jk"
+path="res://.godot/imported/Jelly Drop (FINAL).ogg-b78953e99c46e3c1ecf359fd901e03bb.oggvorbisstr"
+
+[deps]
+
+source_file="res://Music/Jelly Drop (FINAL).ogg"
+dest_files=["res://.godot/imported/Jelly Drop (FINAL).ogg-b78953e99c46e3c1ecf359fd901e03bb.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
