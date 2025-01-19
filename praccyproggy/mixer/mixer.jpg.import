@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b2mhv6jqa4ety"
-path="res://.godot/imported/mixer.jpg-263370c40c881d9aa0d23cfdf52df845.ctex"
+path="res://.godot/imported/mixer.jpg-19ae605fd92664c1ecc794e7776a568b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://mixer.jpg"
-dest_files=["res://.godot/imported/mixer.jpg-263370c40c881d9aa0d23cfdf52df845.ctex"]
+source_file="res://mixer/mixer.jpg"
+dest_files=["res://.godot/imported/mixer.jpg-19ae605fd92664c1ecc794e7776a568b.ctex"]
 
 [params]
 
