@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://dx8746etygdkm"]
+[gd_scene load_steps=5 format=3 uid="uid://b6qnlfrpgke1i"]
 
 [ext_resource type="Script" path="res://music_player.gd" id="1_27ogr"]
 [ext_resource type="AudioStream" uid="uid://dc2bxkmnpw1jk" path="res://Music/Jelly Drop (FINAL).ogg" id="1_jdaxr"]

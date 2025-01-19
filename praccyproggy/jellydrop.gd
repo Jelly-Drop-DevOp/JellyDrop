@@ -11,7 +11,7 @@ func _ready() -> void:
 		dropcolor = Vector4(1, .984, .694, 1)
 	if(decisionMaker == 0):
 		dropcolor = Vector4(0.627, 0.8, 1.0, 1)
-	$JellAi/JellyAnimations.dropcolor = dropcolor
+	$JellAi/JellyAnimations.setdropcolor(dropcolor)
 	pass # Replace with function body.
 
 

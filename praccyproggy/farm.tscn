@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://cuj06sanmhu01" path="res://scene_controller.tscn" id="2_1vn11"]
 [ext_resource type="PackedScene" uid="uid://cf0p7vco72ic3" path="res://jellydrop.tscn" id="2_eprei"]
 [ext_resource type="Texture2D" uid="uid://cns73sm1ida5v" path="res://assets/maps/habitatV2.jpg" id="3_pppcs"]
-[ext_resource type="PackedScene" uid="uid://dx8746etygdkm" path="res://music_player.tscn" id="5_jojp2"]
+[ext_resource type="PackedScene" uid="uid://b6qnlfrpgke1i" path="res://music_player.tscn" id="5_jojp2"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_ujobm"]
 
