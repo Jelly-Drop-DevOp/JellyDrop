@@ -1,7 +1,7 @@
 # Represents all entities owned by the player.
 class_name Inventory extends Resource
 
-# TODO: (tyleralbert) - Use Jelly inheritance hierarchy.
+# TODO: tyleralbert - Use Jelly inheritance hierarchy.
 @export var owned_jellies: Array[BlueJelly] = []
 
 static func load() -> Inventory:
