@@ -44,10 +44,11 @@ func idle():
 
 func wander():
 	$JellyAnimations.play("move")
-	$JellyAnimations/JellyLineart.stop()
-	$JellyAnimations/JellyShine.stop()
+	$JellyAnimations/JellyLineart.play("move_lineart")
+	$JellyAnimations/JellyShine.play("idle_shine")
 	direction = Vector2(randi() % 3 - 1, randi() % 3 - 1)
 	$JellyAnimations.flip_h = direction.x <= 0
+	$JellyAnimations/JellyLineart.flip_h = direction.x <= 0
 	print(direction)
 	velocity = direction * SPEED
 	busyTimer = randi() % 150 - 50

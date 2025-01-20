@@ -1,4 +1,4 @@
-[gd_scene load_steps=110 format=3 uid="uid://cf0p7vco72ic3"]
+[gd_scene load_steps=111 format=3 uid="uid://cf0p7vco72ic3"]
 
 [ext_resource type="Script" path="res://jellydrop.gd" id="1_p30oi"]
 [ext_resource type="Script" path="res://jellyai.gd" id="1_swmws"]
@@ -50,6 +50,7 @@
 [ext_resource type="Shader" path="res://jellylineart.gdshader" id="73_476j3"]
 [ext_resource type="Texture2D" uid="uid://c3wqry0rj7lsq" path="res://assets/idle_shine/jelly-idle-shine-3.png" id="73_yn7q3"]
 [ext_resource type="Texture2D" uid="uid://7ir0ck4jbqbq" path="res://assets/idle_shine/jelly-idle-shine-4.png" id="74_7v81n"]
+[ext_resource type="Texture2D" uid="uid://1txyjbj2d1cd" path="res://assets/emptyidle.png" id="74_gbgun"]
 [ext_resource type="Texture2D" uid="uid://jcsrw53cgi7p" path="res://assets/idle_shine/jelly-idle-shine-5.png" id="75_o347w"]
 [ext_resource type="Texture2D" uid="uid://krjpb1xrwdjj" path="res://assets/idle_shine/jelly-idle-shine-6.png" id="76_eerd0"]
 [ext_resource type="Texture2D" uid="uid://bsc1ednp5xulo" path="res://assets/idle_shine/jelly-idle-shine-7.png" id="77_fpl1p"]
@@ -104,6 +105,7 @@
 [ext_resource type="Texture2D" uid="uid://dfebcsc0ji8jg" path="res://assets/idle_lineart/jelly-idle-lineart-28.png" id="126_bt87w"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_fxdbi"]
+resource_local_to_scene = true
 shader = ExtResource("3_r1ku0")
 shader_parameter/dropcolor = Vector4(1, 0.984, 0.694, 1)
 
@@ -253,6 +255,7 @@ animations = [{
 }]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_eefxk"]
+resource_local_to_scene = true
 shader = ExtResource("44_8h6ou")
 shader_parameter/dropcolor = Vector4(1, 0.984, 0.694, 1)
 
@@ -346,9 +349,18 @@ animations = [{
 "loop": true,
 "name": &"idle_shine",
 "speed": 16.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("74_gbgun")
+}],
+"loop": true,
+"name": &"move_shine",
+"speed": 16.0
 }]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_xc135"]
+resource_local_to_scene = true
 shader = ExtResource("73_476j3")
 shader_parameter/dropcolor = Vector4(0.847, 0.773, 0.38, 1)
 
@@ -442,6 +454,14 @@ animations = [{
 "loop": true,
 "name": &"idle_lineart",
 "speed": 16.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("74_gbgun")
+}],
+"loop": true,
+"name": &"move_lineart",
+"speed": 16.0
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_kp4ho"]
@@ -459,7 +479,7 @@ material = SubResource("ShaderMaterial_fxdbi")
 position = Vector2(3.05176e-05, 3.8147e-06)
 scale = Vector2(0.102751, 0.112617)
 sprite_frames = SubResource("SpriteFrames_43d0g")
-animation = &"idle_fill"
+animation = &"move"
 script = ExtResource("44_k1rdv")
 
 [node name="JellyShine" type="AnimatedSprite2D" parent="JellAi/JellyAnimations"]
@@ -467,12 +487,12 @@ material = SubResource("ShaderMaterial_eefxk")
 position = Vector2(-0.000297005, -3.38732e-05)
 scale = Vector2(1.00242, 1.0034)
 sprite_frames = SubResource("SpriteFrames_sdecl")
-animation = &"idle_shine"
+animation = &"move_shine"
 
 [node name="JellyLineart" type="AnimatedSprite2D" parent="JellAi/JellyAnimations"]
 material = SubResource("ShaderMaterial_xc135")
 sprite_frames = SubResource("SpriteFrames_8t4mo")
-animation = &"idle_lineart"
+animation = &"move_lineart"
 
 [node name="JellyCollision" type="CollisionShape2D" parent="JellAi"]
 position = Vector2(-2, 2)

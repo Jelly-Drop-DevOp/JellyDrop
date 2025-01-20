@@ -7,10 +7,14 @@ func _ready() -> void:
 	
 	pass # Replace with function body.
 
-func setdropcolor(color: Vector4) -> void:
+func set_dropcolor(color: Vector4) -> void:
 	self.material.set_shader_parameter("dropcolor", color)
+	$JellyShine.material.set_shader_parameter("dropcolor", Vector4(color.w + .1, color.x + .1, color.y + .1, color.z))
 	pass
-	
+
+func set_dropoutline(color: Vector4) -> void:
+	$JellyLineart.material.set_shader_parameter("dropcolor", color)
+	pass
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:

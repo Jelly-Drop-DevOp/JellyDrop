@@ -14,3 +14,13 @@ res://jellydrop.gdshader
 res://jellylineart.gdshader
 res://jellyshine.gdshader
 res://jelly_animations.gd
+res://animatable_body_2d.gd
+res://clickdrag.gd
+res://farm.gd
+res://Global.gd
+res://jelly_drop(midi).gd
+res://music_player.gd
+res://scene_controller.gd
+res://shop_transfer_button.gd
+res://spawn_drop.gd
+res://tstscript.gd
