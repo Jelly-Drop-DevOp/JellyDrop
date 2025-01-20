@@ -45,7 +45,7 @@ func idle():
 func wander():
 	$JellyAnimations.play("move")
 	$JellyAnimations/JellyLineart.play("move_lineart")
-	$JellyAnimations/JellyShine.play("idle_shine")
+	$JellyAnimations/JellyShine.play("move_shine")
 	direction = Vector2(randi() % 3 - 1, randi() % 3 - 1)
 	$JellyAnimations.flip_h = direction.x <= 0
 	$JellyAnimations/JellyLineart.flip_h = direction.x <= 0

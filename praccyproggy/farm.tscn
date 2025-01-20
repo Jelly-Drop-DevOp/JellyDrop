@@ -56,7 +56,7 @@ action_mode = 0
 text = "make jelly"
 
 [node name="jellySpawn" type="Marker2D" parent="."]
-position = Vector2(227, 199)
+position = Vector2(484, 284)
 
 [node name="jellySpawn" type="Marker2D" parent="jellySpawn"]
 position = Vector2(-15, 313)
@@ -121,6 +121,10 @@ offset_top = 2.0
 offset_right = 655.0
 offset_bottom = 33.0
 text = "drop drop"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(574, 324)
+zoom = Vector2(2, 2)
 
 [connection signal="pressed" from="addJellyButton" to="." method="_on_add_jelly_button_pressed"]
 [connection signal="pressed" from="makedropbutton" to="." method="_on_makedropbutton_pressed"]
