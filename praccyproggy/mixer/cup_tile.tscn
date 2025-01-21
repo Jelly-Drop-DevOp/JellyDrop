@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://kk8hqer2ije8"]
+
+[ext_resource type="Texture2D" uid="uid://bu83vs0ofttgj" path="res://stmixerglass.webp" id="1_kp5i3"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_etg3y"]
+radius = 56.0357
+
+[node name="CupTile" type="Node2D"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+input_pickable = true
+
+[node name="CupCollision" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(1, 1)
+shape = SubResource("CircleShape2D_etg3y")
+debug_color = Color(1, 1, 1, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+position = Vector2(2.00002, 2)
+scale = Vector2(0.160188, 0.1025)
+texture = ExtResource("1_kp5i3")

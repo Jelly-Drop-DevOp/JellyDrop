@@ -1,13 +1,14 @@
-[gd_scene load_steps=5 format=3 uid="uid://bwb1dt1dc8guk"]
+[gd_scene load_steps=6 format=3 uid="uid://bwb1dt1dc8guk"]
 
 [ext_resource type="Script" path="res://mixer/mixer.gd" id="1_3o2kp"]
 [ext_resource type="Texture2D" uid="uid://b2mhv6jqa4ety" path="res://mixer/mixer.jpg" id="1_mxug0"]
-[ext_resource type="PackedScene" uid="uid://xyjnu7xjqg02" path="res://mixer/jelly_list_entry.tscn" id="2_j4et6"]
+[ext_resource type="PackedScene" uid="uid://xyjnu7xjqg02" path="res://mixer/mixer_jelly_tile.tscn" id="2_j4et6"]
 [ext_resource type="PackedScene" uid="uid://cuj06sanmhu01" path="res://scene_controller.tscn" id="2_ns23k"]
+[ext_resource type="PackedScene" uid="uid://kk8hqer2ije8" path="res://mixer/cup_tile.tscn" id="5_h8gvm"]
 
 [node name="Mixer" type="Node2D" node_paths=PackedStringArray("jelly_entry_markers", "left_cup", "right_cup", "result")]
 script = ExtResource("1_3o2kp")
-jelly_list_entry_template = ExtResource("2_j4et6")
+mixer_jelly_tile_template = ExtResource("2_j4et6")
 jelly_entry_markers = [NodePath("JellyEntries/Entry0"), NodePath("JellyEntries/Entry1"), NodePath("JellyEntries/Entry2"), NodePath("JellyEntries/Entry3"), NodePath("JellyEntries/Entry4"), NodePath("JellyEntries/Entry5"), NodePath("JellyEntries/Entry6"), NodePath("JellyEntries/Entry7")]
 left_cup = NodePath("LeftCup")
 right_cup = NodePath("RightCup")
@@ -46,11 +47,11 @@ position = Vector2(943, 307)
 [node name="Entry7" type="Marker2D" parent="JellyEntries"]
 position = Vector2(945, 417)
 
-[node name="LeftCup" type="Marker2D" parent="."]
-position = Vector2(199, 104)
-
-[node name="RightCup" type="Marker2D" parent="."]
-position = Vector2(417, 110)
-
 [node name="Result" type="Marker2D" parent="."]
 position = Vector2(309, 532)
+
+[node name="LeftCup" parent="." instance=ExtResource("5_h8gvm")]
+position = Vector2(198, 101)
+
+[node name="RightCup" parent="." instance=ExtResource("5_h8gvm")]
+position = Vector2(418, 109)
