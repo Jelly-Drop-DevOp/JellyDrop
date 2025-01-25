@@ -1,17 +1,19 @@
-[gd_scene load_steps=6 format=3 uid="uid://bwb1dt1dc8guk"]
+[gd_scene load_steps=7 format=3 uid="uid://bwb1dt1dc8guk"]
 
 [ext_resource type="Script" path="res://mixer/mixer.gd" id="1_3o2kp"]
 [ext_resource type="Texture2D" uid="uid://b2mhv6jqa4ety" path="res://mixer/mixer.jpg" id="1_mxug0"]
 [ext_resource type="PackedScene" uid="uid://xyjnu7xjqg02" path="res://mixer/mixer_jelly_tile.tscn" id="2_j4et6"]
 [ext_resource type="PackedScene" uid="uid://cuj06sanmhu01" path="res://scene_controller.tscn" id="2_ns23k"]
 [ext_resource type="PackedScene" uid="uid://kk8hqer2ije8" path="res://mixer/cup_tile.tscn" id="5_h8gvm"]
+[ext_resource type="PackedScene" uid="uid://cx7igqr6dukrg" path="res://mixer/mix_tile.tscn" id="6_jf0q4"]
 
-[node name="Mixer" type="Node2D" node_paths=PackedStringArray("jelly_entry_markers", "left_cup", "right_cup", "result")]
+[node name="Mixer" type="Node2D" node_paths=PackedStringArray("jelly_entry_markers", "left_cup", "right_cup", "mix_tile", "result")]
 script = ExtResource("1_3o2kp")
 mixer_jelly_tile_template = ExtResource("2_j4et6")
 jelly_entry_markers = [NodePath("JellyEntries/Entry0"), NodePath("JellyEntries/Entry1"), NodePath("JellyEntries/Entry2"), NodePath("JellyEntries/Entry3"), NodePath("JellyEntries/Entry4"), NodePath("JellyEntries/Entry5"), NodePath("JellyEntries/Entry6"), NodePath("JellyEntries/Entry7")]
 left_cup = NodePath("LeftCup")
 right_cup = NodePath("RightCup")
+mix_tile = NodePath("MixTile")
 result = NodePath("Result")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
@@ -55,3 +57,6 @@ position = Vector2(198, 101)
 
 [node name="RightCup" parent="." instance=ExtResource("5_h8gvm")]
 position = Vector2(418, 109)
+
+[node name="MixTile" parent="." instance=ExtResource("6_jf0q4")]
+position = Vector2(303, 520)

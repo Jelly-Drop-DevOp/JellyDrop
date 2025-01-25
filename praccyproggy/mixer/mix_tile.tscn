@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://cx7igqr6dukrg"]
+
+[ext_resource type="Texture2D" uid="uid://bo7f34ojnbq3y" path="res://bwaaamp.png" id="1_tlhrn"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_gyrpp"]
+radius = 56.0357
+
+[node name="MixTile" type="Node2D"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+input_pickable = true
+
+[node name="CupCollision" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(1, 1)
+shape = SubResource("CircleShape2D_gyrpp")
+debug_color = Color(1, 1, 1, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+position = Vector2(2.00002, 3.51)
+scale = Vector2(0.160188, 0.10734)
+texture = ExtResource("1_tlhrn")

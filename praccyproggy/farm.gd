@@ -14,7 +14,7 @@ func _on_add_jelly_button_pressed() -> void:
 	inventory.save()
 	spawn_jelly(new_jelly_instance)
 
-func spawn_jelly(jelly_instance: BlueJelly) -> void:
+func spawn_jelly(_jelly_instance: BlueJelly) -> void:
 	var jelly = jellyTemplate.instantiate()
 	# TODO: tyleralbert - Populate jelly with data from jelly_instance.
 	jelly.position = $JellySpawner.position
