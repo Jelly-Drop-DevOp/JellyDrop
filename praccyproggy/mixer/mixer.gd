@@ -29,6 +29,7 @@ func add_jelly_list_entry(jelly_instance: BlueJelly) -> void:
 			continue
 
 		var tile: Node2D = mixer_jelly_tile_template.instantiate()
+		
 		marker.add_child(tile)
 		var body: CharacterBody2D = tile.get_node("CharacterBody2D")
 		body.connect("input_event", self._on_jelly_list_entry_input.bind(tile, jelly_instance))
@@ -36,7 +37,7 @@ func add_jelly_list_entry(jelly_instance: BlueJelly) -> void:
 
 	print("Unable to populate jelly list entry for jelly: " + jelly_instance.name)
 
-func _on_left_cup_input(viewport: Viewport, event: InputEvent, shape_idx: int):
+func _on_left_cup_input(_viewport: Viewport, event: InputEvent, _shape_idx: int):
 	if !event.is_pressed():
 		return
 
