@@ -1,0 +1,45 @@
+[gd_scene load_steps=4 format=3 uid="uid://bwb1dt1dc8guk"]
+
+[ext_resource type="Texture2D" uid="uid://b2mhv6jqa4ety" path="res://mixer.jpg" id="1_mxug0"]
+[ext_resource type="PackedScene" uid="uid://cuj06sanmhu01" path="res://scene_controller.tscn" id="2_ns23k"]
+[ext_resource type="Script" path="res://spawn_drop.gd" id="3_xxo01"]
+
+[node name="Mixer" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1152.0
+offset_bottom = 646.0
+color = Color(0.72549, 1, 1, 1)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(576.59, 324.172)
+scale = Vector2(2.2477, 2.24186)
+texture = ExtResource("1_mxug0")
+
+[node name="JellyList" type="Button" parent="."]
+offset_left = 639.0
+offset_top = 135.0
+offset_right = 835.0
+offset_bottom = 258.0
+text = "JellyList"
+
+[node name="Button" type="Button" parent="."]
+offset_left = 249.0
+offset_top = 512.0
+offset_right = 371.0
+offset_bottom = 553.0
+text = "Mix!"
+
+[node name="SceneController" parent="." instance=ExtResource("2_ns23k")]
+
+[node name="SpawnDrop" type="Button" parent="."]
+offset_left = 651.0
+offset_top = 297.0
+offset_right = 825.0
+offset_bottom = 378.0
+text = "Windows 95 drop
+"
+script = ExtResource("3_xxo01")
+
+[connection signal="pressed" from="SpawnDrop" to="SceneController" method="_on_spawn_drop_pressed"]
+[connection signal="pressed" from="SpawnDrop" to="SpawnDrop" method="_on_pressed"]

@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://b6qnlfrpgke1i"]
+
+[ext_resource type="Script" path="res://music_player.gd" id="1_27ogr"]
+[ext_resource type="AudioStream" uid="uid://dc2bxkmnpw1jk" path="res://Music/Jelly Drop (FINAL).ogg" id="1_jdaxr"]
+[ext_resource type="AudioStream" uid="uid://c7ojjvr2r3geq" path="res://Music/Jelly Drop (MIDI).wav" id="1_vim31"]
+[ext_resource type="Script" path="res://jelly_drop(midi).gd" id="2_05icp"]
+
+[node name="MusicPlayer" type="Node2D"]
+script = ExtResource("1_27ogr")
+
+[node name="Toggle" type="Button" parent="."]
+offset_left = 990.0
+offset_top = 38.0
+offset_right = 1098.0
+offset_bottom = 69.0
+text = "Toggle Music
+"
+
+[node name="JellyDropMidi" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(341, 453)
+stream = ExtResource("1_vim31")
+volume_db = 1.0
+autoplay = true
+script = ExtResource("2_05icp")
+
+[node name="JellyDrop(final)" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(573, 323)
+stream = ExtResource("1_jdaxr")
+
+[connection signal="pressed" from="Toggle" to="." method="_on_toggle_pressed"]
+[connection signal="finished" from="JellyDropMidi" to="JellyDropMidi" method="_on_finished"]

@@ -1,9 +1,11 @@
-[gd_scene load_steps=9 format=3 uid="uid://b57agm7a18cmu"]
+[gd_scene load_steps=15 format=3 uid="uid://b57agm7a18cmu"]
 
 [ext_resource type="Script" path="res://farm.gd" id="1_n4t2v"]
 [ext_resource type="PackedScene" uid="uid://cuj06sanmhu01" path="res://scene_controller.tscn" id="2_1vn11"]
 [ext_resource type="PackedScene" uid="uid://cf0p7vco72ic3" path="res://jellydrop.tscn" id="2_eprei"]
-[ext_resource type="Texture2D" uid="uid://ctuhrxrryvcyr" path="res://assets/habitatV2.jpg" id="3_abj5m"]
+[ext_resource type="Texture2D" uid="uid://cns73sm1ida5v" path="res://assets/maps/habitatV2.jpg" id="3_pppcs"]
+[ext_resource type="Script" path="res://jelly_spawnpositions.gd" id="5_2rlhg"]
+[ext_resource type="PackedScene" uid="uid://b6qnlfrpgke1i" path="res://music_player.tscn" id="5_jojp2"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_ujobm"]
 
@@ -17,14 +19,32 @@ distance = -333.0
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_58g8u"]
 distance = -315.0
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0ytqx"]
+size = Vector2(1150, 108.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3748o"]
+size = Vector2(166.5, 113)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_pncgo"]
+radius = 37.0
+height = 223.878
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_f30eo"]
+radius = 40.0
+height = 188.0
+
 [node name="Farm" type="Node2D"]
 script = ExtResource("1_n4t2v")
 jellyTemplate = ExtResource("2_eprei")
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1151.0
+offset_bottom = 648.0
+color = Color(0.458824, 1, 1, 1)
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="MapSprite" type="Sprite2D" parent="."]
 position = Vector2(576, 324.5)
 scale = Vector2(0.7175, 0.721111)
-texture = ExtResource("3_abj5m")
+texture = ExtResource("3_pppcs")
 
 [node name="SceneController" parent="." instance=ExtResource("2_1vn11")]
 position = Vector2(6.10352e-05, 3.05176e-05)
@@ -35,28 +55,76 @@ offset_bottom = 8.0
 action_mode = 0
 text = "make jelly"
 
-[node name="JellySpawner" type="Marker2D" parent="."]
-position = Vector2(227, 199)
+[node name="jellySpawn" type="Marker2D" parent="."]
+position = Vector2(317, 278)
+script = ExtResource("5_2rlhg")
 
-[node name="BorderCollision" type="StaticBody2D" parent="."]
+[node name="jellySpawn1" type="Marker2D" parent="jellySpawn"]
+position = Vector2(-14, 248)
+
+[node name="jellySpawn2" type="Marker2D" parent="jellySpawn"]
+position = Vector2(538, 15)
+
+[node name="jellySpawn3" type="Marker2D" parent="jellySpawn"]
+position = Vector2(550, 239)
+
+[node name="walls" type="Node2D" parent="."]
+position = Vector2(-276, -116)
+
+[node name="CollisionMap" type="StaticBody2D" parent="."]
 position = Vector2(553, 316)
 physics_material_override = SubResource("PhysicsMaterial_ujobm")
 
-[node name="Left" type="CollisionShape2D" parent="BorderCollision"]
+[node name="LeftWall" type="CollisionShape2D" parent="CollisionMap"]
 position = Vector2(280, 0)
 rotation = 1.5708
 shape = SubResource("WorldBoundaryShape2D_1dyi4")
 
-[node name="Right" type="CollisionShape2D" parent="BorderCollision"]
+[node name="RightWall" type="CollisionShape2D" parent="CollisionMap"]
 position = Vector2(-235, 0)
 rotation = 4.71239
 shape = SubResource("WorldBoundaryShape2D_1dyi4")
 
-[node name="Bottom" type="CollisionShape2D" parent="BorderCollision"]
+[node name="Floor" type="CollisionShape2D" parent="CollisionMap"]
 shape = SubResource("WorldBoundaryShape2D_o31k3")
 
-[node name="Top" type="CollisionShape2D" parent="BorderCollision"]
+[node name="TopWall" type="CollisionShape2D" parent="CollisionMap"]
 rotation = 3.14159
 shape = SubResource("WorldBoundaryShape2D_58g8u")
 
-[connection signal="pressed" from="AddJellyButton" to="." method="_on_add_jelly_button_pressed"]
+[node name="TreeCollission" type="CollisionPolygon2D" parent="CollisionMap"]
+polygon = PackedVector2Array(-362, -94, -377, -96, -387, -98, -396, -106, -415, -124, -446, -126, -451, -142, -462, -173, -462, -207, -552, -207, -552, -96, -551, -70, -519, -85, -505, -88, -493, -80, -491, -70, -480, -48, -473, -44, -463, -47, -451, -77, -449, -86, -439, -84, -426, -83, -414, -79, -396, -79, -380, -80, -373, -83, -363, -82, -355, -92)
+
+[node name="Fence" type="CollisionShape2D" parent="CollisionMap"]
+position = Vector2(23, -261.25)
+shape = SubResource("RectangleShape2D_0ytqx")
+
+[node name="Trough" type="CollisionShape2D" parent="CollisionMap"]
+position = Vector2(210.75, -207.5)
+shape = SubResource("RectangleShape2D_3748o")
+
+[node name="Bush2" type="CollisionShape2D" parent="CollisionMap"]
+position = Vector2(513, -191)
+rotation = 1.55509
+shape = SubResource("CapsuleShape2D_pncgo")
+
+[node name="Bush" type="CollisionShape2D" parent="CollisionMap"]
+position = Vector2(-341, -189)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_f30eo")
+
+[node name="MusicPlayer" parent="." instance=ExtResource("5_jojp2")]
+visible = false
+
+[node name="makedropbutton" type="Button" parent="."]
+offset_left = 569.0
+offset_top = 2.0
+offset_right = 655.0
+offset_bottom = 33.0
+text = "drop drop"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(574, 324)
+
+[connection signal="pressed" from="addJellyButton" to="." method="_on_add_jelly_button_pressed"]
+[connection signal="pressed" from="makedropbutton" to="." method="_on_makedropbutton_pressed"]

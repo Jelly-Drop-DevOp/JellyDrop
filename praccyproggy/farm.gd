@@ -1,11 +1,13 @@
 extends Node2D
 @export var jellyTemplate: PackedScene
+var spawncount
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	var inventory: Inventory = Inventory.load()
 	for jelly_instance in inventory.owned_jellies:
 		spawn_jelly(jelly_instance)
+		spawncount = 0;
 
 func _on_add_jelly_button_pressed() -> void:
 	var inventory: Inventory = Inventory.load()
@@ -16,6 +18,5 @@ func _on_add_jelly_button_pressed() -> void:
 
 func spawn_jelly(_jelly_instance: BlueJelly) -> void:
 	var jelly = jellyTemplate.instantiate()
-	# TODO: tyleralbert - Populate jelly with data from jelly_instance.
-	jelly.position = $JellySpawner.position
+	jelly.position = $jellySpawn.next_spawnpoint()
 	add_child(jelly)

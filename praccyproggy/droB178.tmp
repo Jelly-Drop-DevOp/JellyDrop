@@ -1,0 +1,47 @@
+[gd_scene load_steps=6 format=3 uid="uid://dnb7bahxu1tl1"]
+
+[ext_resource type="Script" path="res://clickdrag.gd" id="1_n1m56"]
+[ext_resource type="Script" path="res://drop.gd" id="1_nijve"]
+[ext_resource type="Texture2D" uid="uid://bjop1hng1q1l1" path="res://assets/dirnkablewindows.png" id="1_pgk71"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_antl6"]
+radius = 50.9806
+height = 223.606
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nbmyy"]
+size = Vector2(1196, 115)
+
+[node name="Drop" type="Node2D"]
+
+[node name="drop" type="CharacterBody2D" parent="."]
+script = ExtResource("1_nijve")
+
+[node name="clickdrag" type="Node2D" parent="drop"]
+script = ExtResource("1_n1m56")
+
+[node name="Dirnkablewindows" type="Sprite2D" parent="drop"]
+position = Vector2(3.8147e-06, 7.62939e-06)
+scale = Vector2(0.200398, 0.214235)
+texture = ExtResource("1_pgk71")
+
+[node name="dropclickarea" type="Area2D" parent="drop"]
+
+[node name="dropclickbox" type="CollisionShape2D" parent="drop/dropclickarea"]
+position = Vector2(-3, 0)
+rotation = -0.178024
+shape = SubResource("CapsuleShape2D_antl6")
+
+[node name="dropshape" type="CollisionShape2D" parent="drop"]
+visible = false
+position = Vector2(-4, 0)
+rotation = -0.178024
+shape = SubResource("CapsuleShape2D_antl6")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(572, 655)
+shape = SubResource("RectangleShape2D_nbmyy")
+
+[connection signal="mouse_entered" from="drop/dropclickarea" to="drop" method="_on_dropclickarea_mouse_entered"]
+[connection signal="mouse_exited" from="drop/dropclickarea" to="drop" method="_on_dropclickarea_mouse_exited"]
