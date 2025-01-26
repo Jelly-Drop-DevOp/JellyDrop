@@ -19,8 +19,4 @@ func _on_farm_transfer_button_pressed() -> void:
 
 
 func _on_mixer_transfer_button_pressed() -> void:
-	get_tree().change_scene_to_file("res://mixer.tscn")
-
-
-func _on_spawn_drop_pressed() -> void:
-	pass # Replace with function body.
+	get_tree().change_scene_to_file("res://mixer/mixer.tscn")
