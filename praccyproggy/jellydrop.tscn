@@ -1,36 +1,36 @@
-[gd_scene load_steps=111 format=3 uid="uid://cf0p7vco72ic3"]
+[gd_scene load_steps=134 format=3 uid="uid://cf0p7vco72ic3"]
 
 [ext_resource type="Script" path="res://jellydrop.gd" id="1_p30oi"]
 [ext_resource type="Script" path="res://jellyai.gd" id="1_swmws"]
 [ext_resource type="Shader" path="res://jellydrop.gdshader" id="3_r1ku0"]
 [ext_resource type="Texture2D" uid="uid://b1p8rlq46vqj4" path="res://assets/ide_filll/jelly-idle-fill-1.png" id="31_b4mbp"]
 [ext_resource type="Texture2D" uid="uid://h5cscajipeh1" path="res://assets/ide_filll/jelly-idle-fill-2.png" id="32_dhtj0"]
-[ext_resource type="Texture2D" uid="uid://csdjfy54c6y0m" path="res://assets/walkgreyscale/Untitled_Artwork-1.png" id="32_ka77n"]
+[ext_resource type="Texture2D" uid="uid://cyxeak0071sfp" path="res://assets/Jellly_Walk/Fill/jelly-move-fill-1.png" id="32_qb5id"]
 [ext_resource type="Texture2D" uid="uid://dnsgc808svndy" path="res://assets/ide_filll/jelly-idle-fill-3.png" id="33_nutg3"]
-[ext_resource type="Texture2D" uid="uid://4hwovwr5de1c" path="res://assets/walkgreyscale/Untitled_Artwork-2.png" id="33_qkles"]
+[ext_resource type="Texture2D" uid="uid://dohr673qjlfd6" path="res://assets/Jellly_Walk/Fill/jelly-move-fill-2.png" id="33_qrkbs"]
+[ext_resource type="Texture2D" uid="uid://d3u355hubnyf3" path="res://assets/Jellly_Walk/Fill/jelly-move-fill-3.png" id="34_3mfi6"]
 [ext_resource type="Texture2D" uid="uid://qs7t8jdky457" path="res://assets/ide_filll/jelly-idle-fill-4.png" id="34_bkxa5"]
-[ext_resource type="Texture2D" uid="uid://b3sg5al0r0cdc" path="res://assets/walkgreyscale/Untitled_Artwork-3.png" id="34_bn714"]
-[ext_resource type="Texture2D" uid="uid://cf0jgk88vx5fd" path="res://assets/walkgreyscale/Untitled_Artwork-4.png" id="35_4w6mq"]
 [ext_resource type="Texture2D" uid="uid://cwj8cal5tagwn" path="res://assets/ide_filll/jelly-idle-fill-5.png" id="35_d0vq6"]
-[ext_resource type="Texture2D" uid="uid://djsgm06k15j3p" path="res://assets/walkgreyscale/Untitled_Artwork-5.png" id="36_4usdc"]
+[ext_resource type="Texture2D" uid="uid://b76gkdt7r0xr8" path="res://assets/Jellly_Walk/Fill/jelly-move-fill-4.png" id="35_o4vrm"]
+[ext_resource type="Texture2D" uid="uid://ctfi6k2hv77rh" path="res://assets/Jellly_Walk/Fill/jelly-move-fill-5.png" id="36_4radj"]
 [ext_resource type="Texture2D" uid="uid://dtfc64kske88m" path="res://assets/ide_filll/jelly-idle-fill-6.png" id="36_2402u"]
 [ext_resource type="Texture2D" uid="uid://b4wbe7woooa51" path="res://assets/ide_filll/jelly-idle-fill-7.png" id="37_l6mil"]
-[ext_resource type="Texture2D" uid="uid://5t28wuc3r4n" path="res://assets/walkgreyscale/Untitled_Artwork-6.png" id="37_ncd17"]
+[ext_resource type="Texture2D" uid="uid://3n2aacwd0mi2" path="res://assets/Jellly_Walk/Fill/jelly-move-fill-6.png" id="37_r7cl3"]
 [ext_resource type="Texture2D" uid="uid://22c5kvy3ghb8" path="res://assets/ide_filll/jelly-idle-fill-8.png" id="38_fl221"]
-[ext_resource type="Texture2D" uid="uid://r0qm2qajt37q" path="res://assets/walkgreyscale/Untitled_Artwork-7.png" id="38_s6mu2"]
-[ext_resource type="Texture2D" uid="uid://bsfpsbv3uxsvi" path="res://assets/walkgreyscale/Untitled_Artwork-8.png" id="39_avioj"]
+[ext_resource type="Texture2D" uid="uid://5vkv5hsj0o5m" path="res://assets/Jellly_Walk/Fill/jelly-move-fill-7.png" id="38_mh6mv"]
 [ext_resource type="Texture2D" uid="uid://b7p7g8snu2x3" path="res://assets/ide_filll/jelly-idle-fill-9.png" id="39_qxpiy"]
+[ext_resource type="Texture2D" uid="uid://bmgj7pmgjncn" path="res://assets/Jellly_Walk/Fill/jelly-move-fill-8.png" id="39_relqf"]
 [ext_resource type="Texture2D" uid="uid://di78cvfpl2q44" path="res://assets/ide_filll/jelly-idle-fill-10.png" id="40_lee0w"]
-[ext_resource type="Texture2D" uid="uid://bocm8a6rlf7h8" path="res://assets/walkgreyscale/Untitled_Artwork-9.png" id="40_nhe7q"]
-[ext_resource type="Texture2D" uid="uid://4sa4lgvm8bu7" path="res://assets/walkgreyscale/Untitled_Artwork-10.png" id="41_8760e"]
+[ext_resource type="Texture2D" uid="uid://be4hvsrjxnnr2" path="res://assets/Jellly_Walk/Fill/jelly-move-fill-9.png" id="40_ntrjb"]
+[ext_resource type="Texture2D" uid="uid://cqakxnb8fpwa3" path="res://assets/Jellly_Walk/Fill/jelly-move-fill-10.png" id="41_a3orj"]
 [ext_resource type="Texture2D" uid="uid://cda1dtbvyxlor" path="res://assets/ide_filll/jelly-idle-fill-11.png" id="41_gfvv1"]
-[ext_resource type="Texture2D" uid="uid://bn4xtlb2mf4su" path="res://assets/walkgreyscale/Untitled_Artwork-11.png" id="42_ccuo7"]
+[ext_resource type="Texture2D" uid="uid://coo67eyr8u434" path="res://assets/Jellly_Walk/Fill/jelly-move-fill-11.png" id="42_3obdv"]
 [ext_resource type="Texture2D" uid="uid://bryxt2heync45" path="res://assets/ide_filll/jelly-idle-fill-12.png" id="42_qu3xp"]
 [ext_resource type="Texture2D" uid="uid://c87smycbhf5u5" path="res://assets/ide_filll/jelly-idle-fill-13.png" id="43_d5c6h"]
-[ext_resource type="Texture2D" uid="uid://bis0nhdsmlydi" path="res://assets/walkgreyscale/Untitled_Artwork-12.png" id="43_iqss2"]
-[ext_resource type="Shader" path="res://jellyshine.gdshader" id="44_8h6ou"]
+[ext_resource type="Texture2D" uid="uid://bqy80kfu1xg0f" path="res://assets/Jellly_Walk/Fill/jelly-move-fill-12.png" id="43_pv5mo"]
 [ext_resource type="Script" path="res://jelly_animations.gd" id="44_k1rdv"]
 [ext_resource type="Texture2D" uid="uid://dvet8cqwy10fk" path="res://assets/ide_filll/jelly-idle-fill-14.png" id="44_krgxj"]
+[ext_resource type="Shader" path="res://jellyshine.gdshader" id="45_5ngbf"]
 [ext_resource type="Texture2D" uid="uid://capannrlt301u" path="res://assets/ide_filll/jelly-idle-fill-15.png" id="45_tq6u0"]
 [ext_resource type="Texture2D" uid="uid://bwjnyt4dr5kp7" path="res://assets/ide_filll/jelly-idle-fill-16.png" id="46_mmydw"]
 [ext_resource type="Texture2D" uid="uid://sgqq713aub8f" path="res://assets/ide_filll/jelly-idle-fill-17.png" id="47_ipxpq"]
@@ -47,19 +47,30 @@
 [ext_resource type="Texture2D" uid="uid://bot7s7xpaksgb" path="res://assets/ide_filll/jelly-idle-fill-28.png" id="58_ltwgi"]
 [ext_resource type="Texture2D" uid="uid://b6qtuvw7ajx2a" path="res://assets/idle_shine/jelly-idle-shine-1.png" id="71_jg3cq"]
 [ext_resource type="Texture2D" uid="uid://0q0t5one6kpn" path="res://assets/idle_shine/jelly-idle-shine-2.png" id="72_p1454"]
+[ext_resource type="Texture2D" uid="uid://2n6sbm5d453c" path="res://assets/Jellly_Walk/Shine/jelly-move-shine-1.png" id="73_1ke20"]
 [ext_resource type="Shader" path="res://jellylineart.gdshader" id="73_476j3"]
 [ext_resource type="Texture2D" uid="uid://c3wqry0rj7lsq" path="res://assets/idle_shine/jelly-idle-shine-3.png" id="73_yn7q3"]
 [ext_resource type="Texture2D" uid="uid://7ir0ck4jbqbq" path="res://assets/idle_shine/jelly-idle-shine-4.png" id="74_7v81n"]
-[ext_resource type="Texture2D" uid="uid://1txyjbj2d1cd" path="res://assets/emptyidle.png" id="74_gbgun"]
+[ext_resource type="Texture2D" uid="uid://bcmfrqdywgnec" path="res://assets/Jellly_Walk/Shine/jelly-move-shine-2.png" id="74_h0r0m"]
 [ext_resource type="Texture2D" uid="uid://jcsrw53cgi7p" path="res://assets/idle_shine/jelly-idle-shine-5.png" id="75_o347w"]
+[ext_resource type="Texture2D" uid="uid://d322j6wy1xpwe" path="res://assets/Jellly_Walk/Shine/jelly-move-shine-3.png" id="75_sbuc0"]
+[ext_resource type="Texture2D" uid="uid://yja2inpdjksh" path="res://assets/Jellly_Walk/Shine/jelly-move-shine-4.png" id="76_3qbw1"]
 [ext_resource type="Texture2D" uid="uid://krjpb1xrwdjj" path="res://assets/idle_shine/jelly-idle-shine-6.png" id="76_eerd0"]
 [ext_resource type="Texture2D" uid="uid://bsc1ednp5xulo" path="res://assets/idle_shine/jelly-idle-shine-7.png" id="77_fpl1p"]
+[ext_resource type="Texture2D" uid="uid://pq232sqer7x4" path="res://assets/Jellly_Walk/Shine/jelly-move-shine-5.png" id="77_v3l73"]
+[ext_resource type="Texture2D" uid="uid://dj4vnhj5c0n5s" path="res://assets/Jellly_Walk/Shine/jelly-move-shine-6.png" id="78_idwt5"]
 [ext_resource type="Texture2D" uid="uid://bqf01euporrkg" path="res://assets/idle_shine/jelly-idle-shine-8.png" id="78_rjsff"]
+[ext_resource type="Texture2D" uid="uid://dx4vcr8blikjy" path="res://assets/Jellly_Walk/Shine/jelly-move-shine-7.png" id="79_twc2o"]
 [ext_resource type="Texture2D" uid="uid://bl3p6b7g8e3jj" path="res://assets/idle_shine/jelly-idle-shine-9.png" id="79_udg7b"]
 [ext_resource type="Texture2D" uid="uid://og1j7dcvdxcp" path="res://assets/idle_shine/jelly-idle-shine-10.png" id="80_0d4wt"]
+[ext_resource type="Texture2D" uid="uid://delf8dot50ufk" path="res://assets/Jellly_Walk/Shine/jelly-move-shine-8.png" id="80_sl6yf"]
+[ext_resource type="Texture2D" uid="uid://bdjtare2n3c31" path="res://assets/Jellly_Walk/Shine/jelly-move-shine-9.png" id="81_8e4lc"]
 [ext_resource type="Texture2D" uid="uid://dqxtfadwf5igi" path="res://assets/idle_shine/jelly-idle-shine-11.png" id="81_d7x34"]
+[ext_resource type="Texture2D" uid="uid://crfgyg5t6m88u" path="res://assets/Jellly_Walk/Shine/jelly-move-shine-10.png" id="82_6qnmo"]
 [ext_resource type="Texture2D" uid="uid://uw3ojbplkd3u" path="res://assets/idle_shine/jelly-idle-shine-12.png" id="82_ibq0j"]
 [ext_resource type="Texture2D" uid="uid://cryadsxlw8frj" path="res://assets/idle_shine/jelly-idle-shine-13.png" id="83_b05w1"]
+[ext_resource type="Texture2D" uid="uid://bms4faim3vond" path="res://assets/Jellly_Walk/Shine/jelly-move-shine-11.png" id="83_gy4ub"]
+[ext_resource type="Texture2D" uid="uid://c40p3k0wt0n0h" path="res://assets/Jellly_Walk/Shine/jelly-move-shine-12.png" id="84_umall"]
 [ext_resource type="Texture2D" uid="uid://8p4vxjaeksye" path="res://assets/idle_shine/jelly-idle-shine-14.png" id="84_xm1wq"]
 [ext_resource type="Texture2D" uid="uid://dbyuhbd0fncwo" path="res://assets/idle_shine/jelly-idle-shine-15.png" id="85_sef5x"]
 [ext_resource type="Texture2D" uid="uid://0fnec64pybsh" path="res://assets/idle_shine/jelly-idle-shine-16.png" id="86_c8217"]
@@ -90,17 +101,29 @@
 [ext_resource type="Texture2D" uid="uid://iv4phihxhjjj" path="res://assets/idle_lineart/jelly-idle-lineart-13.png" id="111_klb7p"]
 [ext_resource type="Texture2D" uid="uid://bebvrnj3gfvda" path="res://assets/idle_lineart/jelly-idle-lineart-14.png" id="112_7jx5v"]
 [ext_resource type="Texture2D" uid="uid://p4tvd2ldpvmy" path="res://assets/idle_lineart/jelly-idle-lineart-15.png" id="113_05kji"]
+[ext_resource type="Texture2D" uid="uid://bj3hdd2q83gl4" path="res://assets/Jellly_Walk/Lineart/jelly-move-lineart-1.png" id="114_etp8h"]
 [ext_resource type="Texture2D" uid="uid://dv78xjn8vebk0" path="res://assets/idle_lineart/jelly-idle-lineart-16.png" id="114_q8f4d"]
 [ext_resource type="Texture2D" uid="uid://mn3w3gwo107y" path="res://assets/idle_lineart/jelly-idle-lineart-17.png" id="115_odvvi"]
+[ext_resource type="Texture2D" uid="uid://c3nv0l0fk70j7" path="res://assets/Jellly_Walk/Lineart/jelly-move-lineart-2.png" id="115_pbdkh"]
+[ext_resource type="Texture2D" uid="uid://hd0vs7t6l3iy" path="res://assets/Jellly_Walk/Lineart/jelly-move-lineart-3.png" id="116_67841"]
 [ext_resource type="Texture2D" uid="uid://bljto1b8evsdk" path="res://assets/idle_lineart/jelly-idle-lineart-18.png" id="116_dhmgq"]
 [ext_resource type="Texture2D" uid="uid://coemnrlqr5d0k" path="res://assets/idle_lineart/jelly-idle-lineart-19.png" id="117_g0yoy"]
+[ext_resource type="Texture2D" uid="uid://tqdusr72w6ir" path="res://assets/Jellly_Walk/Lineart/jelly-move-lineart-4.png" id="117_rkx6k"]
 [ext_resource type="Texture2D" uid="uid://dw6n5jk2hyp0l" path="res://assets/idle_lineart/jelly-idle-lineart-20.png" id="118_ga6b0"]
+[ext_resource type="Texture2D" uid="uid://b8skfta0yhuuv" path="res://assets/Jellly_Walk/Lineart/jelly-move-lineart-5.png" id="118_qbgem"]
 [ext_resource type="Texture2D" uid="uid://d4n0geymrvjw1" path="res://assets/idle_lineart/jelly-idle-lineart-21.png" id="119_3ygwm"]
+[ext_resource type="Texture2D" uid="uid://devuh7bue75rv" path="res://assets/Jellly_Walk/Lineart/jelly-move-lineart-6.png" id="119_vrhuh"]
 [ext_resource type="Texture2D" uid="uid://cjlvev3ntd52a" path="res://assets/idle_lineart/jelly-idle-lineart-22.png" id="120_7itrq"]
+[ext_resource type="Texture2D" uid="uid://dqpvab5bh2r6o" path="res://assets/Jellly_Walk/Lineart/jelly-move-lineart-7.png" id="120_wf6av"]
+[ext_resource type="Texture2D" uid="uid://cgtueuijo6vap" path="res://assets/Jellly_Walk/Lineart/jelly-move-lineart-8.png" id="121_gq5at"]
 [ext_resource type="Texture2D" uid="uid://6jvwfn00nfda" path="res://assets/idle_lineart/jelly-idle-lineart-23.png" id="121_lmnb8"]
+[ext_resource type="Texture2D" uid="uid://de0pjpga0iare" path="res://assets/Jellly_Walk/Lineart/jelly-move-lineart-9.png" id="122_clhcp"]
 [ext_resource type="Texture2D" uid="uid://hsrxuln3s00d" path="res://assets/idle_lineart/jelly-idle-lineart-24.png" id="122_s1hg0"]
 [ext_resource type="Texture2D" uid="uid://cgoo0jfk6tc2q" path="res://assets/idle_lineart/jelly-idle-lineart-25.png" id="123_lsx2j"]
+[ext_resource type="Texture2D" uid="uid://6f50e25yp7km" path="res://assets/Jellly_Walk/Lineart/jelly-move-lineart-10.png" id="123_ufdd0"]
 [ext_resource type="Texture2D" uid="uid://bn7rxp7am4n25" path="res://assets/idle_lineart/jelly-idle-lineart-26.png" id="124_no006"]
+[ext_resource type="Texture2D" uid="uid://23363weytpjb" path="res://assets/Jellly_Walk/Lineart/jelly-move-lineart-11.png" id="124_x0q1y"]
+[ext_resource type="Texture2D" uid="uid://dnd11wfnl0etm" path="res://assets/Jellly_Walk/Lineart/jelly-move-lineart-12.png" id="125_1a73v"]
 [ext_resource type="Texture2D" uid="uid://cdprsapfv07sh" path="res://assets/idle_lineart/jelly-idle-lineart-27.png" id="125_2cxg4"]
 [ext_resource type="Texture2D" uid="uid://dfebcsc0ji8jg" path="res://assets/idle_lineart/jelly-idle-lineart-28.png" id="126_bt87w"]
 
@@ -108,6 +131,12 @@
 resource_local_to_scene = true
 shader = ExtResource("3_r1ku0")
 shader_parameter/dropcolor = Vector4(1, 0.984, 0.694, 1)
+shader_parameter/shine_position = Vector2(0.22, 0.22)
+shader_parameter/shine_size = 0.1
+shader_parameter/feather = 0.05
+shader_parameter/ratio = 1.20468
+shader_parameter/brightness = 1.0
+shader_parameter/contrast = 1.0
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_43d0g"]
 animations = [{
@@ -202,40 +231,40 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("32_ka77n")
+"texture": ExtResource("32_qb5id")
 }, {
 "duration": 1.0,
-"texture": ExtResource("33_qkles")
+"texture": ExtResource("33_qrkbs")
 }, {
 "duration": 1.0,
-"texture": ExtResource("34_bn714")
+"texture": ExtResource("34_3mfi6")
 }, {
 "duration": 1.0,
-"texture": ExtResource("35_4w6mq")
+"texture": ExtResource("35_o4vrm")
 }, {
 "duration": 1.0,
-"texture": ExtResource("36_4usdc")
+"texture": ExtResource("36_4radj")
 }, {
 "duration": 1.0,
-"texture": ExtResource("37_ncd17")
+"texture": ExtResource("37_r7cl3")
 }, {
 "duration": 1.0,
-"texture": ExtResource("38_s6mu2")
+"texture": ExtResource("38_mh6mv")
 }, {
 "duration": 1.0,
-"texture": ExtResource("39_avioj")
+"texture": ExtResource("39_relqf")
 }, {
 "duration": 1.0,
-"texture": ExtResource("40_nhe7q")
+"texture": ExtResource("40_ntrjb")
 }, {
 "duration": 1.0,
-"texture": ExtResource("41_8760e")
+"texture": ExtResource("41_a3orj")
 }, {
 "duration": 1.0,
-"texture": ExtResource("42_ccuo7")
+"texture": ExtResource("42_3obdv")
 }, {
 "duration": 1.0,
-"texture": ExtResource("43_iqss2")
+"texture": ExtResource("43_pv5mo")
 }],
 "loop": true,
 "name": &"move",
@@ -244,7 +273,7 @@ animations = [{
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_eefxk"]
 resource_local_to_scene = true
-shader = ExtResource("44_8h6ou")
+shader = ExtResource("45_5ngbf")
 shader_parameter/dropcolor = Vector4(1, 0.984, 0.694, 1)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_sdecl"]
@@ -340,7 +369,40 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("74_gbgun")
+"texture": ExtResource("73_1ke20")
+}, {
+"duration": 1.0,
+"texture": ExtResource("74_h0r0m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("75_sbuc0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("76_3qbw1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("77_v3l73")
+}, {
+"duration": 1.0,
+"texture": ExtResource("78_idwt5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("79_twc2o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("80_sl6yf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("81_8e4lc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("82_6qnmo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("83_gy4ub")
+}, {
+"duration": 1.0,
+"texture": ExtResource("84_umall")
 }],
 "loop": true,
 "name": &"move_shine",
@@ -445,7 +507,40 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("74_gbgun")
+"texture": ExtResource("114_etp8h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("115_pbdkh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("116_67841")
+}, {
+"duration": 1.0,
+"texture": ExtResource("117_rkx6k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("118_qbgem")
+}, {
+"duration": 1.0,
+"texture": ExtResource("119_vrhuh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("120_wf6av")
+}, {
+"duration": 1.0,
+"texture": ExtResource("121_gq5at")
+}, {
+"duration": 1.0,
+"texture": ExtResource("122_clhcp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("123_ufdd0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("124_x0q1y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("125_1a73v")
 }],
 "loop": true,
 "name": &"move_lineart",
@@ -465,9 +560,10 @@ script = ExtResource("1_swmws")
 show_behind_parent = true
 material = SubResource("ShaderMaterial_fxdbi")
 position = Vector2(3.05176e-05, 3.8147e-06)
-scale = Vector2(0.102751, 0.112617)
+scale = Vector2(0.136, 0.15)
 sprite_frames = SubResource("SpriteFrames_43d0g")
-animation = &"move"
+animation = &"idle_fill"
+frame_progress = 0.473322
 script = ExtResource("44_k1rdv")
 
 [node name="JellyShine" type="AnimatedSprite2D" parent="JellAi/JellyAnimations"]
@@ -475,14 +571,18 @@ material = SubResource("ShaderMaterial_eefxk")
 position = Vector2(-0.000297005, -3.38732e-05)
 scale = Vector2(1.00242, 1.0034)
 sprite_frames = SubResource("SpriteFrames_sdecl")
-animation = &"move_shine"
+animation = &"idle_shine"
+frame_progress = 0.808348
 
 [node name="JellyLineart" type="AnimatedSprite2D" parent="JellAi/JellyAnimations"]
 material = SubResource("ShaderMaterial_xc135")
 sprite_frames = SubResource("SpriteFrames_8t4mo")
-animation = &"move_lineart"
+animation = &"idle_lineart"
 
 [node name="JellyCollision" type="CollisionShape2D" parent="JellAi"]
-position = Vector2(-2, 2)
+position = Vector2(0, 2)
 shape = SubResource("CircleShape2D_kp4ho")
 debug_color = Color(1, 1, 1, 0)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(3, 3)

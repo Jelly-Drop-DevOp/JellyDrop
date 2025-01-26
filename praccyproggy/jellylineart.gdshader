@@ -7,11 +7,9 @@ void vertex() {
 }
 
 void fragment() {
-	vec4 input_color = texture(TEXTURE, UV);
-	input_color.r = input_color.r * dropcolor.r;
-	input_color.g = input_color.g * dropcolor.g;
-	input_color.b = input_color.b * dropcolor.b;
-	COLOR = input_color;
+	COLOR.r *= dropcolor.r;
+	COLOR.g *= dropcolor.g;
+	COLOR.b *= dropcolor.b;
 }
 
 //void light() {
