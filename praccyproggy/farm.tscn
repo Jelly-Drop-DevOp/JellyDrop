@@ -6,6 +6,8 @@
 [ext_resource type="Texture2D" uid="uid://cns73sm1ida5v" path="res://assets/maps/habitatV2.jpg" id="3_pppcs"]
 [ext_resource type="Script" path="res://jelly_spawnpositions.gd" id="5_2rlhg"]
 [ext_resource type="PackedScene" uid="uid://du02tv1mvj0sy" path="res://music_player.tscn" id="5_jojp2"]
+[ext_resource type="PackedScene" path="res://music_player.tscn" id="5_jojp2"]
+
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_ujobm"]
 

@@ -16,9 +16,10 @@ func get_input():
 	var input_direction = Input.get_vector("left", "right", "up", "down")
 	velocity = input_direction * speed
 
-#draggable only ever set true by parent but prevents jellai from decisions making untill dropped.
 
-func _physics_process(delta):
+#draggable only ever set true by parent but prevents jellai from decisions making untill dropped.
+func _physics_process(_delta):
+
 	#get_input()
 	print("global position in ai:",to_global(self.position))
 	if (draggable):

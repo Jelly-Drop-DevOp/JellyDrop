@@ -15,7 +15,3 @@ func set_dropcolor(color: Vector4) -> void:
 func set_dropoutline(color: Vector4) -> void:
 	$JellyLineart.material.set_shader_parameter("dropcolor", color)
 	pass
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass

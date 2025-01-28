@@ -24,8 +24,6 @@ func _ready() -> void:
 	$JellAi.position = position
 	position = Vector2(0.0,0.0)
 
-
-
 func stats() -> void:
 	print("global jelly ai pos:",to_global($JellAi.position))
 	print("jellypos:",global_position)
