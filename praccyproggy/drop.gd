@@ -17,15 +17,8 @@ func _ready() -> void:
 
 func _physics_process(delta: float) -> void:
 	if draggable:
-		##var tween = get_tree().create_tween()
-		##tween.tween_property(self, "position", get_global_mouse_position() - offset, delay * delta)
-		velocity += ((get_global_mouse_position() - offset) - position)
-		##print(position.distance_to(get_global_mouse_position() - offset))
-		##print(get_global_mouse_position() - position)
-		##print(offset)
-		velocity = velocity * .9
-		##$Dirnkablewindows.scale.y = clamp(remap(abs((get_global_mouse_position() - offset).y - position.y), 0, 100, spritescaley, spritescaley*2), spritescaley, spritescaley*2)
-		##$Dirnkablewindows.scale.x = clamp(remap(abs((get_global_mouse_position() - offset).x - position.x), 0, 100, spritescalex, spritescalex*2), spritescalex, spritescalex*2) 
+		velocity += ((get_global_mouse_position() - offset) - to_global(position))
+		velocity *= .9 
 	if not is_on_floor() && !draggable:
 		velocity += get_gravity() * delta
 	elif !draggable: 
@@ -41,6 +34,4 @@ func _input(event):
 				draggable = true
 		else:
 			draggable = false
-			##$Dirnkablewindows.scale.y = spritescaley
-			##$Dirnkablewindows.scale.x = spritescalex
 ##if $dropclickarea/dropclickbox.get_rect().has_point(to_local(event.position)):

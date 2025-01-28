@@ -6,8 +6,6 @@
 [ext_resource type="Texture2D" uid="uid://cns73sm1ida5v" path="res://assets/maps/habitatV2.jpg" id="3_pppcs"]
 [ext_resource type="Script" path="res://jelly_spawnpositions.gd" id="5_2rlhg"]
 [ext_resource type="PackedScene" uid="uid://du02tv1mvj0sy" path="res://music_player.tscn" id="5_jojp2"]
-[ext_resource type="PackedScene" path="res://music_player.tscn" id="5_jojp2"]
-
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_ujobm"]
 
@@ -43,7 +41,6 @@ jellyTemplate = ExtResource("2_eprei")
 offset_right = 1151.0
 offset_bottom = 648.0
 color = Color(0.458824, 1, 1, 1)
-metadata/_edit_use_anchors_ = true
 
 [node name="MapSprite" type="Sprite2D" parent="."]
 position = Vector2(576, 324.5)
@@ -58,22 +55,19 @@ offset_right = 8.0
 offset_bottom = 8.0
 action_mode = 0
 text = "make jelly"
-metadata/_edit_use_anchors_ = true
 
 [node name="jellySpawn" type="Marker2D" parent="."]
+position = Vector2(317, 278)
 script = ExtResource("5_2rlhg")
 
 [node name="jellySpawn1" type="Marker2D" parent="jellySpawn"]
-position = Vector2(309, 242)
+position = Vector2(-14, 248)
 
 [node name="jellySpawn2" type="Marker2D" parent="jellySpawn"]
-position = Vector2(308, 470)
+position = Vector2(538, 15)
 
 [node name="jellySpawn3" type="Marker2D" parent="jellySpawn"]
-position = Vector2(786, 238)
-
-[node name="jellySpawn4" type="Marker2D" parent="jellySpawn"]
-position = Vector2(793, 444)
+position = Vector2(550, 239)
 
 [node name="walls" type="Node2D" parent="."]
 position = Vector2(-276, -116)
@@ -129,7 +123,6 @@ offset_top = 2.0
 offset_right = 655.0
 offset_bottom = 33.0
 text = "drop drop"
-metadata/_edit_use_anchors_ = true
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(574, 324)

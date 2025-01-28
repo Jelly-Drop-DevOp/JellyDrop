@@ -1,6 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://bwb1dt1dc8guk"]
+[gd_scene load_steps=4 format=3 uid="uid://cytg3w2dpxgo6"]
 
-[ext_resource type="Texture2D" uid="uid://b2mhv6jqa4ety" path="res://mixer.jpg" id="1_mxug0"]
+[ext_resource type="Texture2D" uid="uid://b2mhv6jqa4ety" path="res://mixer/mixer.jpg" id="1_mxug0"]
 [ext_resource type="PackedScene" uid="uid://cuj06sanmhu01" path="res://scene_controller.tscn" id="2_ns23k"]
 [ext_resource type="Script" path="res://spawn_drop.gd" id="3_xxo01"]
 

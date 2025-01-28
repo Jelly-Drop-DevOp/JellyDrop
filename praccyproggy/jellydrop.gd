@@ -3,6 +3,8 @@ extends Node2D
 var dropcolor = Vector4()
 var dropoutline = Vector4()
 var valueTester
+var draggable = false;
+var offset = 0;
 
 #dropcolor is a vec4 used to shade the texture for the drops set when innitially created only
 #Called when the node enters the scene tree for the first time.
@@ -19,10 +21,22 @@ func _ready() -> void:
 		dropoutline = Vector4(0.361, 0.588, 0.859, 1)
 	$JellAi/JellyAnimations.set_dropcolor(dropcolor)
 	$JellAi/JellyAnimations.set_dropoutline(dropoutline)
-	pass # Replace with function body.
+	$JellAi.position = position
+	position = Vector2(0.0,0.0)
 
+func stats() -> void:
+	print("global jelly ai pos:",to_global($JellAi.position))
+	print("jellypos:",global_position)
+	print("colors (dropcolor;dropoutline):", dropcolor, dropoutline)
+	print("busy timer: ", $JellAi.busytimer)
+	print("velocity: ", $JellAi.velocity)
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(_delta: float) -> void:
-	$Camera2D.position = self.position
-	pass
+func _input(event):
+	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
+		if event.pressed:
+			if Geometry2D.is_point_in_circle(event.position, to_global($JellAi.position), $JellAi/JellyCollision.shape.radius):
+				$JellAi.offset = get_global_mouse_position() - to_global($JellAi.position)
+				$JellAi.draggable = true
+		else:
+			$JellAi.draggable = false
+		##if Geometry2D.is_point_in_polygon(event.position, $JellAi/JellyCollision.get_shape()):
