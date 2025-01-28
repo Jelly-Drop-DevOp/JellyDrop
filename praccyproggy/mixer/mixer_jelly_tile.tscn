@@ -1,45 +1,6 @@
-[gd_scene load_steps=44 format=3 uid="uid://xyjnu7xjqg02"]
+[gd_scene load_steps=5 format=3 uid="uid://xyjnu7xjqg02"]
 
-[ext_resource type="Texture2D" uid="uid://bk1vqdyqian42" path="res://Water Drop Animation V1-20241129T192132Z-001/Water Drop Animation V1/water-drop-f1.PNG" id="2_tvi3s"]
-[ext_resource type="Texture2D" uid="uid://bdss5i2rnlqid" path="res://Water Drop Animation V1-20241129T192132Z-001/Water Drop Animation V1/water-drop-f2.PNG" id="3_24i0w"]
-[ext_resource type="Texture2D" uid="uid://dtay03813iyen" path="res://Water Drop Animation V1-20241129T192132Z-001/Water Drop Animation V1/water-drop-f3.PNG" id="4_2fw3j"]
-[ext_resource type="Texture2D" uid="uid://uwry2dqg3ox6" path="res://Water Drop Animation V1-20241129T192132Z-001/Water Drop Animation V1/water-drop-f4.PNG" id="5_qt0et"]
-[ext_resource type="Texture2D" uid="uid://yopqhki1mq58" path="res://Water Drop Animation V1-20241129T192132Z-001/Water Drop Animation V1/water-drop-f5.PNG" id="6_2180j"]
-[ext_resource type="Texture2D" uid="uid://iw4wo504018" path="res://Water Drop Animation V1-20241129T192132Z-001/Water Drop Animation V1/water-drop-f6.PNG" id="7_6stxy"]
-[ext_resource type="Texture2D" uid="uid://8s2xslyvesk4" path="res://Water Drop Animation V1-20241129T192132Z-001/Water Drop Animation V1/water-drop-f7.PNG" id="8_okxar"]
-[ext_resource type="Texture2D" uid="uid://2vdkwqe8w1m6" path="res://Water Drop Animation V1-20241129T192132Z-001/Water Drop Animation V1/water-drop-f8.PNG" id="9_a8qvq"]
-[ext_resource type="Texture2D" uid="uid://b5cdmgrilm5rf" path="res://Water Drop Animation V1-20241129T192132Z-001/Water Drop Animation V1/water-drop-f9.PNG" id="10_j4lni"]
-[ext_resource type="Texture2D" uid="uid://d0ti4obw8tcs8" path="res://Water Drop Animation V1-20241129T192132Z-001/Water Drop Animation V1/water-drop-f10.PNG" id="11_33l6o"]
-[ext_resource type="Texture2D" uid="uid://vdyl0gg1h7s8" path="res://Water Drop Animation V1-20241129T192132Z-001/Water Drop Animation V1/water-drop-f11.PNG" id="12_tg2lg"]
-[ext_resource type="Texture2D" uid="uid://codv3v42sq4fj" path="res://Water Drop Animation V1-20241129T192132Z-001/Water Drop Animation V1/water-drop-f12.PNG" id="13_xwhla"]
-[ext_resource type="Texture2D" uid="uid://ch5o71s6qcj0n" path="res://Water Drop Animation V1-20241129T192132Z-001/Water Drop Animation V1/water-drop-f13.PNG" id="14_e78co"]
-[ext_resource type="Texture2D" uid="uid://dlew1g7byv4ob" path="res://Water Drop Animation V1-20241129T192132Z-001/Water Drop Animation V1/water-drop-f14.PNG" id="15_c8y8n"]
-[ext_resource type="Texture2D" uid="uid://cg5s2p6bngew1" path="res://Water Drop Animation V1-20241129T192132Z-001/Water Drop Animation V1/water-drop-f15.PNG" id="16_ptsu7"]
-[ext_resource type="Texture2D" uid="uid://peqrvdc8ku7y" path="res://Water Drop Animation V1-20241129T192132Z-001/Water Drop Animation V1/water-drop-f16.PNG" id="17_mxrj1"]
-[ext_resource type="Texture2D" uid="uid://bx76hklnqvh0t" path="res://Water Drop Animation V1-20241129T192132Z-001/Water Drop Animation V1/water-drop-f17.PNG" id="18_ixtj1"]
-[ext_resource type="Texture2D" uid="uid://d2cq3whfa3bcq" path="res://Water Drop Animation V1-20241129T192132Z-001/Water Drop Animation V1/water-drop-f18.PNG" id="19_u80kv"]
-[ext_resource type="Texture2D" uid="uid://ben743oy7l5fs" path="res://Water Drop Animation V1-20241129T192132Z-001/Water Drop Animation V1/water-drop-f19.PNG" id="20_prkf6"]
-[ext_resource type="Texture2D" uid="uid://bmhifdn2h6sa8" path="res://Water Drop Animation V1-20241129T192132Z-001/Water Drop Animation V1/water-drop-f20.PNG" id="21_cqygu"]
-[ext_resource type="Texture2D" uid="uid://10q15c61j34l" path="res://Water Drop Animation V1-20241129T192132Z-001/Water Drop Animation V1/water-drop-f21.PNG" id="22_wxhyl"]
-[ext_resource type="Texture2D" uid="uid://i71qmprpaj4m" path="res://Water Drop Animation V1-20241129T192132Z-001/Water Drop Animation V1/water-drop-f22.PNG" id="23_vlaxc"]
-[ext_resource type="Texture2D" uid="uid://bbn8xy80x2q5w" path="res://Water Drop Animation V1-20241129T192132Z-001/Water Drop Animation V1/water-drop-f23.PNG" id="24_d3pu7"]
-[ext_resource type="Texture2D" uid="uid://g775no1t64ae" path="res://Water Drop Animation V1-20241129T192132Z-001/Water Drop Animation V1/water-drop-f24.PNG" id="25_jcstp"]
-[ext_resource type="Texture2D" uid="uid://cs8pofp3d7xfp" path="res://Water Drop Animation V1-20241129T192132Z-001/Water Drop Animation V1/water-drop-f25.PNG" id="26_djisc"]
-[ext_resource type="Texture2D" uid="uid://x8tp2s1u3oli" path="res://Water Drop Animation V1-20241129T192132Z-001/Water Drop Animation V1/water-drop-f26.PNG" id="27_83vcy"]
-[ext_resource type="Texture2D" uid="uid://b6pkwmddu4v2h" path="res://Water Drop Animation V1-20241129T192132Z-001/Water Drop Animation V1/water-drop-f27.PNG" id="28_m87ax"]
-[ext_resource type="Texture2D" uid="uid://b4b852k1b5myt" path="res://Water Drop Animation V1-20241129T192132Z-001/Water Drop Animation V1/water-drop-f28.PNG" id="29_lcbn0"]
-[ext_resource type="Texture2D" uid="uid://b6bg33i0n0hhx" path="res://Water Drop Anim Move V1/Untitled_Artwork-1.png" id="30_nc3io"]
-[ext_resource type="Texture2D" uid="uid://5vhcc3wbhmqy" path="res://Water Drop Anim Move V1/Untitled_Artwork-2.png" id="31_j8cgu"]
-[ext_resource type="Texture2D" uid="uid://blkymu4chev84" path="res://Water Drop Anim Move V1/Untitled_Artwork-3.png" id="32_3cok3"]
-[ext_resource type="Texture2D" uid="uid://bygr5u8r1rrux" path="res://Water Drop Anim Move V1/Untitled_Artwork-4.png" id="33_bv478"]
-[ext_resource type="Texture2D" uid="uid://dhlxusy6iuxk7" path="res://Water Drop Anim Move V1/Untitled_Artwork-5.png" id="34_bdtga"]
-[ext_resource type="Texture2D" uid="uid://kc0mjhhys33u" path="res://Water Drop Anim Move V1/Untitled_Artwork-6.png" id="35_jkjlu"]
-[ext_resource type="Texture2D" uid="uid://60v8ugbuvd5i" path="res://Water Drop Anim Move V1/Untitled_Artwork-7.png" id="36_w26sf"]
-[ext_resource type="Texture2D" uid="uid://bu0wt62hdgcmt" path="res://Water Drop Anim Move V1/Untitled_Artwork-8.png" id="37_scgx1"]
-[ext_resource type="Texture2D" uid="uid://cv2bkovis43gd" path="res://Water Drop Anim Move V1/Untitled_Artwork-9.png" id="38_j3jal"]
-[ext_resource type="Texture2D" uid="uid://bn4a1ewuoan7" path="res://Water Drop Anim Move V1/Untitled_Artwork-10.png" id="39_bqi37"]
-[ext_resource type="Texture2D" uid="uid://kvrg1vb85g7d" path="res://Water Drop Anim Move V1/Untitled_Artwork-11.png" id="40_2tnqg"]
-[ext_resource type="Texture2D" uid="uid://dgvaomlj801sn" path="res://Water Drop Anim Move V1/Untitled_Artwork-12.png" id="41_4wk0x"]
+[ext_resource type="Texture2D" uid="uid://cxpuwm7yau42k" path="res://assets/idle_lineart/jelly-idle-lineart-1.png" id="2_tvi3s"]
 
 [sub_resource type="GDScript" id="GDScript_uu4dr"]
 script/source = "class_name MixerJellyTile extends Node2D
@@ -55,143 +16,9 @@ animations = [{
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("2_tvi3s")
-}, {
-"duration": 1.0,
-"texture": ExtResource("3_24i0w")
-}, {
-"duration": 1.0,
-"texture": ExtResource("4_2fw3j")
-}, {
-"duration": 1.0,
-"texture": ExtResource("5_qt0et")
-}, {
-"duration": 1.0,
-"texture": ExtResource("6_2180j")
-}, {
-"duration": 1.0,
-"texture": ExtResource("7_6stxy")
-}, {
-"duration": 1.0,
-"texture": ExtResource("8_okxar")
-}, {
-"duration": 1.0,
-"texture": ExtResource("9_a8qvq")
-}, {
-"duration": 1.0,
-"texture": ExtResource("10_j4lni")
-}, {
-"duration": 1.0,
-"texture": ExtResource("11_33l6o")
-}, {
-"duration": 1.0,
-"texture": ExtResource("12_tg2lg")
-}, {
-"duration": 1.0,
-"texture": ExtResource("13_xwhla")
-}, {
-"duration": 1.0,
-"texture": ExtResource("14_e78co")
-}, {
-"duration": 1.0,
-"texture": ExtResource("15_c8y8n")
-}, {
-"duration": 1.0,
-"texture": ExtResource("16_ptsu7")
-}, {
-"duration": 1.0,
-"texture": ExtResource("17_mxrj1")
-}, {
-"duration": 1.0,
-"texture": ExtResource("18_ixtj1")
-}, {
-"duration": 1.0,
-"texture": ExtResource("19_u80kv")
-}, {
-"duration": 1.0,
-"texture": ExtResource("20_prkf6")
-}, {
-"duration": 1.0,
-"texture": ExtResource("21_cqygu")
-}, {
-"duration": 1.0,
-"texture": ExtResource("22_wxhyl")
-}, {
-"duration": 1.0,
-"texture": ExtResource("23_vlaxc")
-}, {
-"duration": 1.0,
-"texture": ExtResource("24_d3pu7")
-}, {
-"duration": 1.0,
-"texture": ExtResource("25_jcstp")
-}, {
-"duration": 1.0,
-"texture": ExtResource("26_djisc")
-}, {
-"duration": 1.0,
-"texture": ExtResource("27_83vcy")
-}, {
-"duration": 1.0,
-"texture": ExtResource("28_m87ax")
-}, {
-"duration": 1.0,
-"texture": ExtResource("29_lcbn0")
 }],
 "loop": true,
 "name": &"idle",
-"speed": 16.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("30_nc3io")
-}, {
-"duration": 1.0,
-"texture": ExtResource("31_j8cgu")
-}, {
-"duration": 1.0,
-"texture": ExtResource("32_3cok3")
-}, {
-"duration": 1.0,
-"texture": ExtResource("33_bv478")
-}, {
-"duration": 1.0,
-"texture": ExtResource("34_bdtga")
-}, {
-"duration": 1.0,
-"texture": ExtResource("35_jkjlu")
-}, {
-"duration": 1.0,
-"texture": ExtResource("36_w26sf")
-}, {
-"duration": 1.0,
-"texture": ExtResource("36_w26sf")
-}, {
-"duration": 1.0,
-"texture": ExtResource("36_w26sf")
-}, {
-"duration": 1.0,
-"texture": ExtResource("36_w26sf")
-}, {
-"duration": 1.0,
-"texture": ExtResource("36_w26sf")
-}, {
-"duration": 1.0,
-"texture": ExtResource("37_scgx1")
-}, {
-"duration": 1.0,
-"texture": ExtResource("38_j3jal")
-}, {
-"duration": 1.0,
-"texture": ExtResource("39_bqi37")
-}, {
-"duration": 1.0,
-"texture": ExtResource("40_2tnqg")
-}, {
-"duration": 1.0,
-"texture": ExtResource("41_4wk0x")
-}],
-"loop": true,
-"name": &"move",
 "speed": 16.0
 }]
 
@@ -208,7 +35,7 @@ input_pickable = true
 position = Vector2(1, 0)
 scale = Vector2(0.102751, 0.112617)
 sprite_frames = SubResource("SpriteFrames_xoe33")
-animation = &"move"
+animation = &"idle"
 
 [node name="JellyCollision" type="CollisionShape2D" parent="CharacterBody2D"]
 position = Vector2(1, 1)
