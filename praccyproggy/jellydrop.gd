@@ -32,6 +32,8 @@ func stats() -> void:
 	print("colors (dropcolor;dropoutline):", dropcolor, dropoutline)
 	print("busy timer: ", $JellAi.busytimer)
 	print("velocity: ", $JellAi.velocity)
+	print("busy timer: ", $JellAi.busyTimer)
+	
 
 func _input(event):
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:

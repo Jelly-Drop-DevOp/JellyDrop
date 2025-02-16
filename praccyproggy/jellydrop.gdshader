@@ -32,8 +32,8 @@ void fragment() {
 	//input_color.rgb = mix(vec3(0.5), input_color.rgb, contrast);
 	//input_color.rgb = mix(vec3(dot(vec3(1.0), input_color.rgb) * 0.33333), input_color.rgb, saturation);
 	//COLOR.rgb = input_color.rgb;
-	
-	
+
+
 
 	//vec2 pixel_size = 1.0 / vec2(textureSize(TEXTURE, 0));
     //vec2 pixel_off = vec2(0, 20.0);

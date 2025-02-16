@@ -1,0 +1,53 @@
+[gd_scene load_steps=4 format=3 uid="uid://c765c5rebr3u3"]
+
+[ext_resource type="Script" path="res://da_clock_zone.gd" id="1_wqn7e"]
+[ext_resource type="Script" path="res://signal_label.gd" id="2_1quym"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_wf4m5"]
+
+[node name="DA CLOCK ZONE" type="Node2D"]
+script = ExtResource("1_wqn7e")
+
+[node name="add watcher" type="Button" parent="."]
+offset_left = 689.0
+offset_top = 133.0
+offset_right = 992.0
+offset_bottom = 225.0
+text = "add 2 second timer"
+
+[node name="SignalPanel" type="Panel" parent="."]
+material = SubResource("CanvasItemMaterial_wf4m5")
+clip_contents = true
+offset_left = 841.0
+offset_top = 355.0
+offset_right = 1083.0
+offset_bottom = 609.0
+
+[node name="ColorRect" type="ColorRect" parent="SignalPanel"]
+layout_mode = 0
+offset_right = 242.0
+offset_bottom = 252.0
+color = Color(0.360784, 0.352941, 0.686275, 1)
+
+[node name="SignalOutput" type="RichTextLabel" parent="SignalPanel"]
+offset_left = 8.0
+offset_top = 7.0
+offset_right = 235.0
+offset_bottom = 242.0
+
+[node name="SignalLabel" type="Label" parent="."]
+offset_left = 843.0
+offset_top = 326.0
+offset_right = 1079.0
+offset_bottom = 356.0
+text = "clock watcher
+"
+script = ExtResource("2_1quym")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[connection signal="pressed" from="add watcher" to="." method="_on_add_watcher_pressed"]

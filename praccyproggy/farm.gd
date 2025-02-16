@@ -20,5 +20,5 @@ func _on_add_jelly_button_pressed() -> void:
 
 func spawn_jelly(_jelly_instance: BlueJelly) -> void:
 	var jelly = jellyTemplate.instantiate()
-	jelly.position = $jellySpawn.next_spawnpoint()	
+	jelly.position = $jellySpawn.next_spawnpoint()
 	add_child(jelly)

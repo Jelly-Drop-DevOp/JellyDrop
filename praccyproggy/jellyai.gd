@@ -20,7 +20,6 @@ func get_input():
 
 func _physics_process(delta):
 	#get_input()
-	print("global position in ai:",to_global(self.position))
 	if (draggable):
 		click_drag(offset)
 	else:
@@ -35,7 +34,6 @@ func _physics_process(delta):
 
 func jellyAi():
 	if(busyTimer <=0):
-		print("busy timer 0")
 		var decisionMaker = randi() % 2
 		if(decisionMaker == 1):
 			idle()
@@ -78,5 +76,5 @@ func wander():
 func click_drag(offset: Vector2):
 	velocity += ((get_global_mouse_position() - offset) - global_position)
 	velocity *= .9
-	print((get_global_mouse_position() - offset) - global_position)
 	busyTimer = 10
+	
