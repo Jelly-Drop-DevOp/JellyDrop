@@ -78,3 +78,7 @@ func click_drag(offset: Vector2):
 	velocity *= .9
 	busyTimer = 10
 	
+
+func produce():
+	
+	print("i dropped a drop")

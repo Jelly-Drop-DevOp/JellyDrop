@@ -18,8 +18,8 @@ func _process(delta: float) -> void:
 	if _tick_progression >= TICK_DURATION:
 		_tick()
 
-func _tick() -> void:
-	tick.emit()
+func _tick() -> void:   
+	tick.emit(TICK_DURATION)
 	_tick_progression -= TICK_DURATION
 
 
@@ -28,10 +28,8 @@ func _ready() -> void:
 	pass
 
 #emits tick signal for every TICK_DURATION between old and new time
-#used for 
+#used for processing time in between sessions
 func _catchup(old_time : float, new_time : float) -> void:
 	
 	for i in (new_time - old_time) / TICK_DURATION:
 		_tick()
-	
-	pass
