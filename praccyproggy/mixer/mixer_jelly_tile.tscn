@@ -1,8 +1,36 @@
+
+[gd_scene load_steps=5 format=3 uid="uid://xyjnu7xjqg02"]
+
+[ext_resource type="Texture2D" uid="uid://cxpuwm7yau42k" path="res://assets/idle_lineart/jelly-idle-lineart-1.png" id="2_tvi3s"]
+
+[sub_resource type="GDScript" id="GDScript_uu4dr"]
+script/source = "class_name MixerJellyTile extends Node2D
+
+var jelly_instance: BlueJelly
+
+func _init(p_jelly_instance: BlueJelly):
+	self.jelly_instance = p_jelly_instance
+"
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xoe33"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_tvi3s")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 16.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_diq61"]
+
 [gd_scene load_steps=3 format=3 uid="uid://bmm2j08fvda48"]
 
 [ext_resource type="Texture2D" uid="uid://bjop1hng1q1l1" path="res://assets/dirnkablewindows.png" id="1_mcq1q"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_qgjb8"]
+
 radius = 25.5539
 
 [node name="MixerJellyTile" type="Node2D"]
@@ -10,10 +38,18 @@ radius = 25.5539
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
 input_pickable = true
 
+
+[node name="JellyAnimations" type="AnimatedSprite2D" parent="CharacterBody2D"]
+position = Vector2(1, 0)
+scale = Vector2(0.102751, 0.112617)
+sprite_frames = SubResource("SpriteFrames_xoe33")
+animation = &"idle"
+
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
 position = Vector2(0, -1)
 scale = Vector2(0.0944056, 0.0928309)
 texture = ExtResource("1_mcq1q")
+
 
 [node name="JellyCollision" type="CollisionShape2D" parent="CharacterBody2D"]
 position = Vector2(1, 1)

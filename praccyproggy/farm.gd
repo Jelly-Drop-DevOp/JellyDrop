@@ -8,6 +8,8 @@ func _ready() -> void:
 	for jelly_instance in inventory.owned_jellies:
 		spawn_jelly(jelly_instance)
 		spawncount = 0;
+		
+
 
 func _on_add_jelly_button_pressed() -> void:
 	var inventory: Inventory = Inventory.load()

@@ -1,0 +1,3 @@
+[gd_scene format=3 uid="uid://b6sy507wuu717"]
+
+[node name="Game_Clock" type="Node"]
