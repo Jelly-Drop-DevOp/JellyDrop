@@ -21,6 +21,7 @@ func get_input():
 func _physics_process(delta):
 	#get_input()
 	if (draggable):
+		print("draggableture")
 		click_drag(offset)
 	else:
 		jellyAi()
@@ -77,7 +78,7 @@ func click_drag(offset: Vector2):
 	velocity += ((get_global_mouse_position() - offset) - global_position)
 	velocity *= .9
 	busyTimer = 10
-	
+	print("dragin me")
 
 func produce():
 	

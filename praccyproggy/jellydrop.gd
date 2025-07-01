@@ -41,6 +41,7 @@ func stats() -> void:
 	print("busy timer: ", $JellAi.busyTimer)
 	print("name: ", jname)
 	print("type: ", type)
+	print("curent production timer", productionTimer)
 
 func _input(event):
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
@@ -48,8 +49,12 @@ func _input(event):
 			if Geometry2D.is_point_in_circle(event.position, to_global($JellAi.position), $JellAi/JellyCollision.shape.radius):
 				$JellAi.offset = get_global_mouse_position() - to_global($JellAi.position)
 				$JellAi.draggable = true
-		else:
+		elif event.is_released():
 			$JellAi.draggable = false
+			if Geometry2D.is_point_in_circle(event.position, to_global($JellAi.position), $JellAi/JellyCollision.shape.radius) && ClickDuration.length <= 100:
+				$JellAi/InfoPanel.propagate_call("set_visible", [true])
+			else:
+				$JellAi/InfoPanel.propagate_call("set_visible", [false])
 		##if Geometry2D.is_point_in_polygon(event.position, $JellAi/JellyCollision.get_shape()):
 
 
@@ -58,4 +63,3 @@ func _onClockTick(tickTime):
 	if(productionTimer <= 0):
 		$JellAi.produce()
 		productionTimer = 5
-	print(productionTimer)

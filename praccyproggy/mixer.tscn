@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://cuj06sanmhu01" path="res://scene_controller.tscn" id="2_ns23k"]
 [ext_resource type="Script" path="res://spawn_drop.gd" id="3_xxo01"]
 
-[node name="Mixer" type="Node2D"]
+[node name="Mixer" type="Node2D" groups=["Persistant"]]
 
 [node name="ColorRect" type="ColorRect" parent="."]
 offset_right = 1152.0

@@ -550,7 +550,7 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_kp4ho"]
 radius = 40.0125
 
-[node name="JellyDrop" type="Node2D"]
+[node name="JellyDrop" type="Node2D" groups=["Persistant"]]
 script = ExtResource("1_p30oi")
 
 [node name="JellAi" type="CharacterBody2D" parent="."]
@@ -584,5 +584,32 @@ position = Vector2(-1, 1)
 shape = SubResource("CircleShape2D_kp4ho")
 debug_color = Color(1, 1, 1, 0)
 
+[node name="InfoPanel" type="Panel" parent="JellAi"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 31.0
+offset_top = -94.0
+offset_right = 97.0
+offset_bottom = -30.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(0, 64)
+
+[node name="ColorRect" type="ColorRect" parent="JellAi/InfoPanel"]
+layout_mode = 0
+offset_right = 66.0
+offset_bottom = 64.0
+color = Color(1, 0.686275, 1, 1)
+
+[node name="Label" type="Label" parent="JellAi/InfoPanel"]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 5.0
+offset_right = 45.0
+offset_bottom = 28.0
+text = "Bitch"
+
 [node name="Camera2D" type="Camera2D" parent="."]
+visible = false
 zoom = Vector2(3, 3)
