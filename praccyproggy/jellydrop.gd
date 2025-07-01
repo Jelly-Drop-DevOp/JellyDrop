@@ -31,7 +31,6 @@ func _ready() -> void:
 	position = Vector2(0.0,0.0)
 
 
-
 func stats() -> void:
 	print("global jelly ai pos:",to_global($JellAi.position))
 	print("jellypos:",global_position)
@@ -63,3 +62,5 @@ func _onClockTick(tickTime):
 	if(productionTimer <= 0):
 		$JellAi.produce()
 		productionTimer = 5
+	print(productionTimer)
+

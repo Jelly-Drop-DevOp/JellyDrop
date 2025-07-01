@@ -19,6 +19,7 @@ func get_input():
 #draggable only ever set true by parent but prevents jellai from decisions making untill dropped.
 
 func _physics_process(delta):
+
 	#get_input()
 	if (draggable):
 		print("draggableture")
