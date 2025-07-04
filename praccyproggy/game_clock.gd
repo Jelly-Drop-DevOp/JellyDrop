@@ -12,6 +12,7 @@ const TICK_DURATION : float = 1.0
 var _tick_progression : float = 0.0
 
 
+
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	_tick_progression += delta
@@ -30,6 +31,5 @@ func _ready() -> void:
 #emits tick signal for every TICK_DURATION between old and new time
 #used for processing time in between sessions
 func _catchup(old_time : float, new_time : float) -> void:
-	
 	for i in (new_time - old_time) / TICK_DURATION:
 		_tick()
